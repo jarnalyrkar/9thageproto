@@ -1,0 +1,18 @@
+body {
+  background: #254c73;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  background: #254c73;
+}
+
+.nav-link {
+  padding: 0px;
+  margin-bottom: 0.25%;
+}
