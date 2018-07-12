@@ -1,7 +1,6 @@
 <?php include($_SERVER["DOCUMENT_ROOT"] . "/9thage/partials/_faction.php") ?>
 
 <?php startblock('army_image_url') ?>
-  <img src="../img/armyplaceholder.png" >
 <?php endblock() ?>
 
 <?php startblock('army_title') ?>
