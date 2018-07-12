@@ -1,4 +1,5 @@
-<?php include($_SERVER["DOCUMENT_ROOT"] . "/9thage/partials/_faction.php") ?>
+
+<?php include($_SERVER["DOCUMENT_ROOT"] . "9thageproto/partials/_faction.php") ?>
 
 <?php startblock('army_image_url') ?>
 <?php endblock() ?>

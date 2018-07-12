@@ -1,5 +1,6 @@
 <?php
-require_once("partials/_head.php");
+
+include($_SERVER["DOCUMENT_ROOT"] . "9thageproto/partials/_head.php") ?>
 ?>
 
 <body>

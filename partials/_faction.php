@@ -1,10 +1,10 @@
-<?php include($_SERVER["DOCUMENT_ROOT"] . "/9thage/lib/ti.php") ?>
-<?php include($_SERVER["DOCUMENT_ROOT"] . "/9thage/partials/_header.php") ?>
+<?php include($_SERVER["DOCUMENT_ROOT"] . "9thageproto/lib/ti.php") ?>
+<?php include($_SERVER["DOCUMENT_ROOT"] . "9thageproto/partials/_header.php") ?>
 <div class="container-fluid">
   <div class="row">
     <div class="col-3">
       <?php startblock('army_image_url') ?>
-        
+
       <?php endblock() ?>
     </div>
 

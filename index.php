@@ -1,9 +1,8 @@
 <?php
-  include 'partials/_header.php';
-  include 'partials/_ninthage.php';
-  include 'partials/_universe.php';
-  include 'partials/_game.php';
-  include 'partials/_thescroll.php';
-  include 'partials/_community.php';
-  include 'partials/_footer.php';
+  include($_SERVER["DOCUMENT_ROOT"] . "9thageproto/partials/_header.php");
+  include($_SERVER["DOCUMENT_ROOT"] . "9thageproto/partials/_universe.php");
+  include($_SERVER["DOCUMENT_ROOT"] . "9thageproto/partials/_game.php");
+  include($_SERVER["DOCUMENT_ROOT"] . "9thageproto/partials/_thescroll.php");
+  include($_SERVER["DOCUMENT_ROOT"] . "9thageproto/partials/_community.php");
+  include($_SERVER["DOCUMENT_ROOT"] . "9thageproto/partials/_footer.php");
 ?>
