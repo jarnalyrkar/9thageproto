@@ -1,5 +1,5 @@
 <?php
-require_once($_SERVER["DOCUMENT_ROOT"] . "/9thage/partials/_head.php");
+require_once("partials/_head.php");
 ?>
 
 <body>
