@@ -178,20 +178,19 @@ a {
 }
 
 .armyImage:hover {
-  opacity: 0.8;
+  opacity: 0.3;
 }
 
 .armyContainer:hover .middle {
   opacity: 1;
 }
 
-.armyContainer:hover a {
-  opacity: 0.8;
+.armyContainer:hover, a:hover {
+  opacity: 1;
 }
 
-.armyText {
+.armyText, .armyText:hover{
   opacity: 1;
-  background-color: rgba(160, 160, 160, 0.4);
   color: #FFC85A;
   display: block;
 }
