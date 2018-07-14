@@ -142,15 +142,13 @@ a {
 #theworld {
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
   text-align: center;
 }
 
 #armies {
-  display: block;
+  display: inline-block;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
 }
 
 .armyContainer {
