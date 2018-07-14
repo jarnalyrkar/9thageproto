@@ -178,8 +178,43 @@ a {
 @media only screen and (max-width: 375px) {
   /* Global settings */
   body {
-    background: red;
+    background: black;
     color: white;
     font-family: cambria;
+  }
+
+  .navbar {
+   height: 13em;
+   background-color: rgba(0,0,255,0) !important;
+  }
+
+  .navbar li {
+    display: block;
+    background-color: rgba(15, 15, 15, 1);
+    border: 1px solid white;
+    margin-top: 0.1em;
+    width: 95%;
+  }
+
+  .center  a {
+    display: none;
+  }
+
+  main {
+    margin-top: 13em;
+  }
+
+  div.row div.col-4 a img {
+    height: auto;
+    width: 20%;
+    overflow: hidden;
+  }
+
+  #thescroll .row {
+    display: none;
+  }
+
+  #theworld {
+    width: 100%;
   }
 }
