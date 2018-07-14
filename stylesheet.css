@@ -95,6 +95,7 @@ a {
 
 }
 
+
 /* Parallax image */
 .miniatures {
   background-image: url("img/miniatures.jpg");
@@ -157,4 +158,188 @@ a {
   max-width: 200px;
   padding: 1%;
   width: 80%;
+}
+
+/* Bigger screens */
+@media screen and (max-width: 1367px) {
+  body {
+    background: green;
+  }
+}
+
+/* Smaller screens */
+@media only screen and (max-width: 667px) {
+  body {
+    background: blue;
+  }
+}
+
+/* Smallest screens */
+@media only screen and (max-width: 375px) {
+  /* Global settings */
+  body {
+    background: red;
+    color: white;
+    font-family: cambria;
+  }
+
+  body, html {
+    height: 100%;
+  }
+
+  a {
+      color: #FFC85A;
+      text-decoration: none;
+  }
+
+  .title {
+    font-size: 1.6em;
+    text-align: center;
+  }
+
+  .paragraph {
+      color: #757575;
+      font-size: 1.3em;
+  }
+
+  .row {
+    display: flex;
+  }
+
+  .col-2 {
+    flex: 50.00%;
+  }
+
+  .col-3 {
+    flex: 33.33%;
+  }
+
+  .col-4 {
+    flex: 25%;
+  }
+
+  .col-6 {
+    flex: 16.66%;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  /* The navigation bar */
+  .navbar {
+     background-color: black;
+     list-style: none;
+     margin: 0;
+     padding: 0;
+     text-align: center;
+     position: fixed;
+     top: 0;
+     width: 100%;
+  }
+
+  .navbar li {
+    display: inline;
+  }
+
+  /* Links inside the navbar */
+  .link-item {
+    display: inline-block;
+    font-size: 1em;
+    text-decoration: none;
+    margin-bottom: 15px;
+    padding: 0 15 0 15;
+  }
+
+  .list-item {
+    padding-top: 0px;
+
+  }
+
+  #seal {
+      position: relative;
+      top: 10px;
+  }
+
+  #headerimg {
+    margin-top: 40px;
+    width: 100%;
+  }
+
+  /* Introduction */
+  #forumimg {
+    float:left;
+  }
+
+  #rulesimg {
+    float: left;
+  }
+
+#forumparagraph {
+  display: visible;
+}
+
+  /* Parallax image */
+  .miniatures {
+    background-image: url("img/miniatures.jpg");
+
+    height: 50%;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .worldmap {
+    background-image: url("img/worldMap.png");
+
+    height: 30%;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* The Scroll */
+  #thescroll {
+    margin: 2% 0 2% 0;
+  }
+
+  #mostRecentScroll {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+  }
+
+  .scrollItem img {
+    width: 20%;
+    height: 45%;
+    padding: 1% 1% 5% 1%;
+  }
+
+  /* Armies */
+
+  #theworld {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    text-align: center;
+  }
+
+  #armies {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+  }
+
+  .faction-image {
+    max-height: 200px;
+    max-width: 200px;
+    padding: 1%;
+    width: 80%;
+  }
 }
