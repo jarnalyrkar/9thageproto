@@ -132,9 +132,8 @@ a {
 }
 
 .scrollItem img {
+  padding: 5% 1% 5% 1%;
   width: 20%;
-  height: 45%;
-  padding: 1% 1% 5% 1%;
 }
 
 /* Armies */
@@ -192,11 +191,11 @@ a {
 .armyText, .armyText:hover{
   opacity: 1;
   color: #FFC85A;
-  display: block;
 }
 
 .armyIcon {
-  max-width: 30px;
+  text-align: center;
+  display: inline-block;
 }
 
 /* Bigger screens */
