@@ -174,7 +174,6 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  text-align: center;
 }
 
 .armyImage:hover {
@@ -185,18 +184,10 @@ a {
   opacity: 1;
 }
 
-.armyContainer:hover, a:hover {
-  opacity: 1;
-}
-
 .armyText, .armyText:hover{
-  opacity: 1;
   color: #FFC85A;
 }
 
-.armyIcon {
-  text-align: justify;
-}
 
 /* Bigger screens */
 @media screen and (max-width: 1367px) {
