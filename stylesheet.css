@@ -138,7 +138,6 @@ a {
 }
 
 /* Armies */
-
 #theworld {
   margin-left: auto;
   margin-right: auto;
@@ -213,8 +212,10 @@ a {
   }
 
   .navbar {
-   height: 13em;
+   /* height: 13em; */
+   text-align: center;
    background-color: rgba(0,0,255,0) !important;
+   position: static;
   }
 
   .navbar li {
@@ -222,28 +223,75 @@ a {
     background-color: rgba(15, 15, 15, 1);
     border: 1px solid white;
     margin-top: 0.1em;
-    width: 95%;
-  }
-
-  .center  a {
-    display: none;
-  }
-
-  main {
-    margin-top: 13em;
-  }
-
-  div.row div.col-4 a img {
-    height: auto;
-    width: 20%;
-    overflow: hidden;
-  }
-
-  #thescroll .row {
-    display: none;
-  }
-
-  #theworld {
     width: 100%;
   }
+
+
+#forum {
+  display: none;
+}
+
+#rules {
+  display: none;
+}
+
+/* Parallax images */
+.miniatures {
+  height: 20%;
+}
+
+#thescroll {
+  margin: 5% 0 5% 0;
+}
+
+#mostRecentScroll {
+  width: 95%;
+  padding-right: 5%;
+  margin-top: 5.5em;
+}
+
+.scrollItem img {
+  width: 40%;
+  padding-left: 1%;
+}
+
+.worldMap {
+  height: 20%;
+}
+
+
+#theworld {
+  text-align: left;
+}
+
+#theworld .col-4 {
+  display: none;
+}
+
+#armies .col-4 {
+  display: inline-block;
+}
+
+#armies {
+  text-align: center;
+}
+
+.armyContainer {
+    float: none;
+    display: inline-block;
+}
+
+.armyImage {
+  max-width: 150px;
+  max-height: 150px;
+  padding: 0;
+}
+
+.middle {
+  display: none;
+}
+.armyImage:hover {
+  opacity: 1;
+}
+
 }
