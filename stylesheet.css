@@ -99,9 +99,7 @@ a {
 /* Parallax image */
 .miniatures {
   background-image: url("img/miniatures.jpg");
-
   height: 50%;
-
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -110,9 +108,7 @@ a {
 
 .worldmap {
   background-image: url("img/worldMap.png");
-
   height: 30%;
-
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -128,13 +124,17 @@ a {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
+  width: 45%;
 }
 
 .scrollItem img {
+  padding: 2% 0.5% 2.5% 0;
   width: 20%;
-  height: 45%;
-  padding: 1% 1% 5% 1%;
+}
+
+#scrollArchive {
+  display: inline-block;
+  float: right;
 }
 
 /* Armies */
@@ -166,7 +166,7 @@ a {
 }
 
 .middle {
-  font-size: 1.3em;
+  font-size: 1.2em;
   transition: .5s ease;
   opacity: 0;
   position: absolute;
@@ -192,11 +192,10 @@ a {
 .armyText, .armyText:hover{
   opacity: 1;
   color: #FFC85A;
-  display: block;
 }
 
 .armyIcon {
-  max-width: 30px;
+  text-align: justify;
 }
 
 /* Bigger screens */
