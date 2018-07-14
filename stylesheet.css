@@ -159,15 +159,16 @@ a {
 }
 
 .armyImage {
-  max-height: 250px;
-  max-width: 250px;
-  padding: 1%;
   opacity: 1;
   transition: .5s ease;
   backface-visibility: hidden;
+  max-height: 250px;
+  max-width: 250px;
+  padding: 1%;
 }
 
 .middle {
+  font-size: 1.3em;
   transition: .5s ease;
   opacity: 0;
   position: absolute;
@@ -179,23 +180,26 @@ a {
 }
 
 .armyImage:hover {
-  opacity: 0.3;
+  opacity: 0.8;
 }
 
 .armyContainer:hover .middle {
   opacity: 1;
 }
 
-.armyText a {
-  opacity: 1;
-  background-color: rgba(160, 160, 160, 0.5);
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
+.armyContainer:hover a {
+  opacity: 0.8;
 }
 
-.armyText a:hover {
-  background-color: rgba(160, 160, 160, 0);
+.armyText {
+  opacity: 1;
+  background-color: rgba(160, 160, 160, 0.4);
+  color: #FFC85A;
+  display: block;
+}
+
+.armyIcon {
+  max-width: 30px;
 }
 
 /* Bigger screens */
