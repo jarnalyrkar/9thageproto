@@ -9,6 +9,9 @@ body {
 body, html {
   height: 100%;
   width: 100%;
+  margin: 0;
+  padding: 0;
+
 }
 
 a {
@@ -60,8 +63,10 @@ a {
    list-style: none;
    margin: 0;
    padding: 0;
+   top: 0;
    text-align: center;
    position: fixed;
+   z-index: 1;
    top: 0;
    width: 100%;
 }
@@ -89,7 +94,28 @@ a {
     top: 10px;
 }
 
+/* Header */
+.headerContainer {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
 #headerimg {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+#headerlogo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  max-width: 720px;
   width: 100%;
 }
 
@@ -103,18 +129,39 @@ a {
 
 
 /* Parallax image */
+.blackTextures {
+    /* background: url("img/black_texture.png") repeat, rgba(0, 0, 0, 0.7);
+    /* background-repeat: repeat-x; */
+    /* position: absolute; */
+}
+
 .miniatures {
   background-image: url("img/miniatures.jpg");
-  height: 50%;
+  height: 75%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+.miniatures:before {
+  content: "";
+  display: block;
+  height: 0%;
+  background-image: url("img/black_texture.png");
+  background-repeat: repeat-x;
+  background-position: bottom;
+}
+.miniatures:after {
+  content: "";
+  display: block;
+  height: 100%;
+  background-image: url("img/black_texture.png");
+  background-repeat: repeat-x;
+  background-position: bottom;
+}
 .worldmap {
   background-image: url("img/worldMap.png");
-  height: 30%;
+  height: 75%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -193,22 +240,24 @@ a {
   color: #FFC85A;
 }
 
-
-/* Bigger screens */
+/****************************/
+/* VIEWPORT: Bigger screens */
 @media screen and (max-width: 1367px) {
   body {
     background: green;
   }
 }
 
-/* Smaller screens */
+/*****************************/
+/* VIEWPORT: Smaller screens */
 @media only screen and (max-width: 667px) {
   body {
     background: blue;
   }
 }
 
-/* Smallest screens */
+/******************************/
+/* VIEWPORT: Smallest screens */
 @media only screen and (max-width: 375px) {
   /* Global settings */
   body {
