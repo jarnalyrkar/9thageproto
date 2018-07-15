@@ -4,7 +4,7 @@
   <meta name="keywords" content="miniatures, fantasy, tabletop, wargaming, painting, hobby">
   <meta name="author" content="The community of The 9th age">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="stylesheet.css">
   <link rel="icon" href="img/seal.png">
 </head>
@@ -17,12 +17,18 @@
     </h1>
   </header>
 
+  <div class="container-fluid">
 
-      <ul class="navbar">
-        <a href="#"><img id="seal" src="img/seal.png" alt="9th Age Seal"></a>
+    <main class="main">
+
+
+      <ul class="navbar-custom">
+         
+        <li class="list-item"><a class="link-item" href="#"><img src="img/seal.png" alt="9th Age Seal"></a></li>
         <li class="list-item"><a class="link-item" href="#ninthage">Downloads</a></li>
         <li class="list-item"><a class="link-item" href="#world">The World</a></li>
         <li class="list-item"><a class="link-item" href="#forum">Forum</a></li>
+        
       </ul>
 
       <div class="container">
@@ -31,13 +37,13 @@
       <section id="introduction">
         <div class="row">
 
-          <div class="col-4" id="forum">
+          <div class="col-sm" id="forum">
             <div class="center">
               <a href="#"><img id="forumimg" src="img/forum.png" alt="Forum"><p>FORUM</p></a>
             </div>
           </div>
 
-          <div class="col-2">
+          <div class="col-sm">
             <h4 class="title">A WARGAME BY GAMERS FOR GAMERS</h4>
             <p class="paragraph">
               The 9th age is a wargame that has lorem ipsum dolor sit amet, ea mei harum
@@ -48,7 +54,7 @@
             </p>
           </div>
 
-          <div class="col-4" id="rules">
+          <div class="col-sm" id="rules">
             <div class="center">
               <a href="#"><img id="rulesimg" src="img/rules.png" alt="Download rules"><p>DOWNLOAD THE RULES</p></a>
             </div>
@@ -70,17 +76,17 @@
           <p class="paragraph centre">The 9th Scroll is a e-zine that comes out ..</p>
         </div>
         <div class="row">
-          <div class="col-2">
+          <div class="col-sm">
             <a href="#"><img id="mostRecentScroll" src="img/scroll/issue_010.png" alt="9th Scroll, Issue 10"></a>
           </div>
-          <div class="col-2">
-            <div class="col-4">
+          <div class="col-sm">
+            <div class="col-sm">
               <a href="#" class="scrollItem"><img src="img/scroll/issue_009.png" alt="9th Scroll, Issue 09"></a>
               <a href="#" class="scrollItem"><img src="img/scroll/issue_008.png" alt="9th Scroll, Issue 08"></a>
               <a href="#" class="scrollItem"><img src="img/scroll/issue_007.png" alt="9th Scroll, Issue 07"></a>
               <a href="#" class="scrollItem"><img src="img/scroll/issue_006.png" alt="9th Scroll, Issue 06"></a>
             </div>
-            <div class="col-4">
+            <div class="col-sm">
               <a href="#" class="scrollItem"><img src="img/scroll/issue_005.png" alt="9th Scroll, Issue 05"></a>
               <a href="#" class="scrollItem"><img src="img/scroll/issue_004.png" alt="9th Scroll, Issue 04"></a>
               <a href="#" class="scrollItem"><img src="img/scroll/issue_003.png" alt="9th Scroll, Issue 03"></a>
@@ -101,27 +107,17 @@
 
       <!-- The World-->
       <section id="theworld">
-          <div class="row">
-            <div class="col-4"></div>
-            <div class="col-2">
-              <div class="center">
-                <header><h4 class="title">The World</h4></header>
-                <p class="subtitle">
-                  <div class="center">
-                  The World of 9th age has as of now 16 official factions, lorem ipsum dolor sit amet, ea mei harum
-                  ornatus definitiones, vis timeam iffendit ex. Te sit unum facer offendit, no solet
-                  soluta inciderint ius, no cibo definitiones has. Amet intellegat ne pro. Everti alienum
-                  consulatu id duo Vel elitr sententiae efficiendi an, his ullum aliquam id.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-4"></div>
+          <div class="center">
+          <h4 class="title">The World</h4>
+          <div class="container">
+          <p class="paragraph centre">The World of 9th age has as of now 16 official factions, lorem ipsum dolor sit amet, ea mei harum ornatus definitiones, vis timeam iffendit ex. Te sit unum facer offendit, no solet soluta inciderint ius, no cibo definitiones has. Amet intellegat ne pro. Everti alienum consulatu id duo Vel elitr sententiae efficiendi an, his ullum aliquam id.</p>
         </div>
+        </div>
+              
         <div id="armies">
           <!-- Row 1 -->
           <div class="row">
-            <div class="col-4">
+            <div class="col-sm">
 
               <div class="armyContainer">
                 <a href="#">
@@ -129,8 +125,8 @@
                   <div class="middle">
                     <div class="armyText">
                       <img src="img/armies/HbE-icon.png" class="armyIcon">
-                    </div>
-                    Highborn Elves
+                        <p>Highborn Elves</p>
+                    </div>                    
                   </div>
                 </a>
               </div>
@@ -141,8 +137,8 @@
                   <div class="middle">
                     <div class="armyText">
                       <img src="img/armies/DE-icon.png" class="armyIcon">
-                    </div>
-                    Dread Elves
+                        <p>Dread Elves</p>
+                    </div>                    
                   </div>
                 </a>
               </div>
@@ -153,8 +149,8 @@
                   <div class="middle">
                     <div class="armyText">
                       <img src="img/armies/SE-icon.png" class="armyIcon">
-                    </div>
-                    Sylvan Elves
+                        <p>Sylvan Elves</p>
+                    </div>                    
                   </div>
                 </a>
               </div>
@@ -165,8 +161,8 @@
                   <div class="middle">
                     <div class="armyText">
                       <img src="img/armies/SA-icon.png" class="armyIcon">
-                    </div>
-                    Saurian Ancients
+                        <p>Saurian Ancients</p>
+                    </div>                    
                   </div>
                 </a>
               </div>
@@ -176,7 +172,7 @@
 
           <!-- Row 2 -->
           <div class="row">
-            <div class="col-4">
+            <div class="col-sm">
 
               <div class="armyContainer">
                 <a href="#">
@@ -184,8 +180,8 @@
                   <div class="middle">
                     <div class="armyText">
                       <img src="img/armies/KoE-icon.png" class="armyIcon">
-                    </div>
-                    Kingdom of Equitaine
+                        <p>Kingdom of Equitaine</p>
+                    </div>                    
                   </div>
                 </a>
               </div>
@@ -196,8 +192,8 @@
                   <div class="middle">
                     <div class="armyText">
                       <img src="img/armies/EoS-icon.png" class="armyIcon">
-                    </div>
-                    Empire of Sonnstahl
+                        <p>Empire of Sonnstahl</p>
+                    </div>                    
                   </div>
                 </a>
               </div>
@@ -208,8 +204,8 @@
                   <div class="middle">
                     <div class="armyText">
                       <img src="img/armies/VC-icon.png" class="armyIcon">
-                    </div>
-                    Vampire Covenant
+                        <p>Vampire Covenant</p>
+                    </div>                    
                   </div>
                 </a>
               </div>
@@ -220,8 +216,8 @@
                   <div class="middle">
                     <div class="armyText">
                       <img src="img/armies/UD-icon.png" class="armyIcon">
-                    </div>
-                    Undying Dynasties
+                        <p>Undying Dynasties</p>
+                    </div>                    
                   </div>
                 </a>
               </div>
@@ -231,7 +227,7 @@
 
           <!-- Row 3 -->
           <div class="row">
-            <div class="col-4">
+            <div class="col-sm">
 
               <div class="armyContainer">
                 <a href="#">
@@ -239,8 +235,8 @@
                   <div class="middle">
                     <div class="armyText">
                       <img src="img/armies/DH-icon.png" class="armyIcon">
-                    </div>
-                      Dwarven Holds
+                        <p>Dwarven Holds</p>
+                    </div>                      
                   </div>
                 </a>
               </div>
@@ -251,8 +247,8 @@
                   <div class="middle">
                     <div class="armyText">
                       <img src="img/armies/ID-icon.png" class="armyIcon">
+                        <p>Infernal Dwarves</p>
                     </div>
-                    Infernal Dwarves
                   </div>
                 </a>
               </div>
@@ -264,8 +260,8 @@
                   <div class="middle">
                     <div class="armyText">
                       <img src="img/armies/OK-icon.png" class="armyIcon">
+                        <p>Ogre Khans</p>
                     </div>
-                    Ogre Khans
                   </div>
                 </a>
               </div>
@@ -276,8 +272,8 @@
                   <div class="middle">
                     <div class="armyText">
                       <img src="img/armies/OnG-icon.png" class="armyIcon">
+                        <p>Orcs and Goblins</p>
                     </div>
-                    Orcs and Goblins
                   </div>
                 </a>
               </div>
@@ -286,7 +282,7 @@
 
           <!-- Row 4 -->
           <div class="row">
-            <div class="col-4">
+            <div class="col-sm">
 
               <div class="armyContainer">
                 <a href="#">
@@ -294,7 +290,7 @@
                   <div class="middle">
                     <div class="armyText">
                       <img src="img/armies/WDG-icon.png" class="armyIcon">
-                      Warriors of the Dark Gods
+                      <p>Warriors of the Dark Gods</p>
                     </div>
                   </div>
                 </a>
@@ -306,7 +302,7 @@
                   <div class="middle">
                     <div class="armyText">
                       <img src="img/armies/DL-icon.png" class="armyIcon">
-                      Daemon Legions
+                      <p>Daemon Legions</p>
                     </div>
                   </div>
                 </a>
@@ -318,8 +314,8 @@
                   <div class="middle">
                     <div class="armyText">
                       <img src="img/armies/BH-icon.png" class="armyIcon">
-                    </div>
-                    Beast Herds
+                        <p>Beast Herds</p>
+                    </div>                    
                   </div>
                 </a>
               </div>
@@ -330,7 +326,7 @@
                   <div class="middle">
                     <div class="armyText">
                       <img src="img/armies/VS-icon.png" class="armyIcon">
-                      Vermin Swarm
+                      <p>Vermin Swarm</p>
                     </div>
                   </div>
                 </a>
