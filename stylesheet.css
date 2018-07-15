@@ -103,9 +103,33 @@ a {
 
 #headerimg {
   width: 100%;
-  position: relative;
+  height: 80%;
   top: 0;
   left: 0;
+  background-image: url("img/header.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.blackBarTop::before {
+  content: "";
+  display: block;
+  height: 20px;
+  background-image: url("img/black_texture_flip.png");
+  background-repeat: repeat-x;
+  background-position: top;
+}
+
+.blackBarBottom::after {
+  content: "";
+  display: block;
+  height: 100%;
+  margin-top: -20px;
+  background-image: url("img/black_texture.png");
+  background-repeat: repeat-x;
+  background-position: bottom;
 }
 
 #headerlogo {
