@@ -3,7 +3,7 @@ body {
   background: black;
   color: white;
   font-family: cambria;
-  
+
 }
 
 body, html {
@@ -59,6 +59,7 @@ a {
 
 /* The navigation bar */
 .navbar-custom {
+  width: 100%;
    background-color: rgba(15,15,15,0.5);
    list-style: none;
    margin: 0;
@@ -68,7 +69,6 @@ a {
    position: fixed;
    z-index: 1;
    top: 0;
-   width: 100%;
 }
 
 .navbar-custom li {
@@ -356,31 +356,31 @@ a {
 }/*--- @media all---*/
 
 /*------- =============== ---------*/
-@media screen and (min-width:481px) { 
-/* less MEDIUM (landscape mobile) */ 
+@media screen and (min-width:481px) {
+/* less MEDIUM (landscape mobile) */
 }/*--- @media 481px---*/
 
 /*------- =============== ---------*/
-@media screen and (min-width:641px) { 
-/* MEDIUM (landscape mobile & tablet) */ 
+@media screen and (min-width:641px) {
+/* MEDIUM (landscape mobile & tablet) */
 }/*--- @media 641---*/
 
 /*------- =============== ---------*/
-@media screen and (min-width:991px) { 
+@media screen and (min-width:991px) {
 /* LARGE (landscape tablet & small desktop screen) */
 }/*--- @media 991---*/
 
 /*------- =============== ---------*/
-@media screen and (min-width:1200px) { 
+@media screen and (min-width:1200px) {
 /* XLARGE (desktop screen ) */
 } /*--- @media 1200---*/
 
 /*------- =============== ---------*/
-@media screen and (min-width:1441px) { 
-/* XXLARGE (large desktop screen) */ 
+@media screen and (min-width:1441px) {
+/* XXLARGE (large desktop screen) */
 }/*--- @media 1441---*/
 
 /*------- =============== ---------*/
-@media screen and (min-width:1681px) { 
+@media screen and (min-width:1681px) {
 /* more XXLARGE (ultra large desktop screen).  */
 }/*--- @media 1681---*/
