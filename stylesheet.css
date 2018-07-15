@@ -153,13 +153,7 @@ a {
 
 
 /* Parallax image */
-.blackTextures {
-    /* background: url("img/black_texture.png") repeat, rgba(0, 0, 0, 0.7);
-    /* background-repeat: repeat-x; */
-    /* position: absolute; */
-}
-
-.miniatures {
+#miniatures {
   background-image: url("img/miniatures.jpg");
   height: 60%;
   background-attachment: fixed;
@@ -167,23 +161,8 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.miniatures:before {
-  content: "";
-  display: block;
-  height: 0%;
-  background-image: url("img/black_texture.png");
-  background-repeat: repeat-x;
-  background-position: bottom;
-}
-.miniatures:after {
-  content: "";
-  display: block;
-  height: 100%;
-  background-image: url("img/black_texture.png");
-  background-repeat: repeat-x;
-  background-position: bottom;
-}
-.worldmap {
+
+#worldmap {
   background-image: url("img/worldMap.png");
   height: 60%;
   background-attachment: fixed;
