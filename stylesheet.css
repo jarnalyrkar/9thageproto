@@ -225,46 +225,55 @@ a:hover {
   margin-bottom: 2.5%;
 }
 
-#armies {
-  margin-left: 4.0%;
+.armies {
+  margin-left: 10%;
   margin-right: auto;
 }
 
 .armyContainer {
-  float: left;
-  margin: 0.5% 1% 0.5% 1%;
+    position: relative;
+    width: 20%;
+    float: left;
+    margin-left: 2%;
+    margin-bottom: 1%;
 }
 
 .armyImage {
   opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
-  width: 400px;
-  max-height: 100%;
-  max-width: 100%;
+  background:rgba(0,0,0,0.6);
 }
 
 .middle {
-  font-size: 1.2em;
-  transition: .5s ease;
   opacity: 0;
+  transition: .5s ease;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+  text-align: center;
 }
 
-.armyImage:hover {
+.armyContainer:hover .armyImage {
   opacity: 0.3;
+}
+
+.armyImage::after {
+  opacity: 0.9;
 }
 
 .armyContainer:hover .middle {
   opacity: 1;
 }
 
-.armyText, .armyText:hover{
+.armyText {
   color: #FFC85A;
+  font-size: 1.5em;
 }
 
 /****************************/
