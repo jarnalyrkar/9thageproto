@@ -86,7 +86,7 @@ a {
   font-size: 1.5em;
   text-decoration: none;
   margin-bottom: 15px;
-  padding: 0 15 0 15;
+  padding: 10 15 0 15;
 }
 
 .list-item {
@@ -149,11 +149,12 @@ a {
 }
 
 /* Introduction */
-#forumimg {
+#forum {
+  margin-top: 3.3%;
 }
 
-#rulesimg {
-
+#rules {
+  margin-top: 3.3%;
 }
 
 
