@@ -182,14 +182,13 @@ a {
 }
 
 #mostRecentScroll {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 45%;
+  float: right;
+  width: 60%;
+  margin-top: 4%;
 }
 
 .scrollItem img {
-  padding: 2% 0.5% 2.5% 0;
+  padding: 2.5% 0.5% 1% 0;
   width: 20%;
 }
 
@@ -206,23 +205,22 @@ a {
 }
 
 #armies {
-  display: inline-block;
-  margin-left: auto;
+  margin-left: 4.0%;
   margin-right: auto;
 }
 
 .armyContainer {
-    float: left;
-    position: relative;
+  float: left;
+  margin: 0.5% 1% 0.5% 1%;
 }
 
 .armyImage {
   opacity: 1;
   transition: .5s ease;
   backface-visibility: hidden;
-  max-height: 250px;
-  max-width: 250px;
-  padding: 1%;
+  width: 400px;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .middle {
