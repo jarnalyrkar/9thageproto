@@ -19,6 +19,10 @@ a {
   text-decoration: none;
 }
 
+h4 {
+  margin-bottom: 2%;
+}
+
 a:hover {
   transition: color 2s;
   color: #94090d;
@@ -211,7 +215,6 @@ a:hover {
 #theworld {
   text-align: center;
   margin: 2.5% auto 0 auto;
-
 }
 
 #worldIcon {
