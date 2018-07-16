@@ -201,6 +201,7 @@ background-color: #444444;
 #scrollArchive {
   display: inline-block;
   float: right;
+  margin-right: 20%;
 }
 
 /* Armies */
