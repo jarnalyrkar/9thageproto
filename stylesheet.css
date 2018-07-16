@@ -15,8 +15,14 @@ body, html {
 }
 
 a {
-    color: #FFC85A;
-    text-decoration: none;
+  color: #FFC85A;
+  text-decoration: none;
+}
+
+a:hover {
+  transition: color 2s;
+  color: #94090d;
+  text-decoration: none;
 }
 
 .title {
@@ -82,16 +88,19 @@ a {
 
 /* Links inside the navbar */
 .link-item {
+  text-decoration: none;
   display: inline-block;
   font-size: 1.5em;
-  text-decoration: none;
   margin-bottom: 15px;
   padding: 10 15 0 15;
 }
 
 .list-item {
-  padding-top: 15px;
+  padding: 1%;
+}
 
+.list-item:hover {
+  background-color: #444444;
 }
 
 #seal {
@@ -200,9 +209,13 @@ a {
 
 /* Armies */
 #theworld {
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
+  margin: 2.5% auto 0 auto;
+
+}
+
+#worldIcon {
+  margin-bottom: 2.5%;
 }
 
 #armies {
