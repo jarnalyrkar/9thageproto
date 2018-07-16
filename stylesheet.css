@@ -57,6 +57,11 @@ a {
   text-align: center;
 }
 
+.centerContent {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* The navigation bar */
 .navbar-custom {
   width: 100%;
