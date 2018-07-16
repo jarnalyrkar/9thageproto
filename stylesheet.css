@@ -19,12 +19,6 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-  transition: color 2s;
-  text-decoration: none;
-  color: #94090d;
-}
-
 .title {
   font-size: 1.6em;
   text-align: center;
@@ -70,7 +64,7 @@ a:hover {
 
 /* The navigation bar */
 .navbar-custom {
-   width: 100%;
+  width: 100%;
    background-color: rgba(15,15,15,0.5);
    list-style: none;
    margin: 0;
@@ -95,12 +89,9 @@ a:hover {
   padding: 0 15 0 15;
 }
 
-.link-item:hover {
-background-color: #444444;
-}
-
 .list-item {
   padding-top: 15px;
+
 }
 
 #seal {
@@ -159,7 +150,6 @@ background-color: #444444;
 
 /* Introduction */
 #forumimg {
-
 }
 
 #rulesimg {
@@ -204,8 +194,8 @@ background-color: #444444;
 }
 
 #scrollArchive {
-  display: inline-block;
   float: right;
+  margin-right: 20%;
 }
 
 /* Armies */
