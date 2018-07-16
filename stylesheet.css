@@ -195,6 +195,10 @@ a:hover {
   margin: 2% 0 2% 0;
 }
 
+#scrollIcon {
+  margin: 2% 0 2% 0;
+}
+
 #mostRecentScroll {
   float: right;
   width: 60%;
