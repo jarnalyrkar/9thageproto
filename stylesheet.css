@@ -150,15 +150,22 @@ h4 {
 /* Introduction */
 #flexContainer {
   display: box;
-  box-orient: vertical;
-
 }
+
 #forum {
   margin-top: 3.3%;
+  order: 2;
+  width: 50%;
+}
+
+#introductionText {
+  order: 1;
 }
 
 #rules {
   margin-top: 3.3%;
+  order: 3;
+  width: 50%;
 }
 
 /* Parallax image */
@@ -476,10 +483,18 @@ a:hover {
 /* Introduction */
 #forum {
   margin-top: 3.3%;
+  order: 1;
+  width: 100%;
+}
+
+#introductionText {
+  order: 2;
 }
 
 #rules {
   margin-top: 3.3%;
+  order: 3;
+  width: 100%;
 }
 
 /* Parallax image */
