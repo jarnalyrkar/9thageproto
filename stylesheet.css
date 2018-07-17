@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Crimson+Text");
+/*--- ========= ---*/
+@media only screen {
+/* SMALL all device */
 /* Global settings */
 body {
-  background: black;
+  background-color: black;
   color: white;
   font-family: 'Crimson Text', regular;
-
 }
 
 body, html {
@@ -39,6 +41,313 @@ a:hover {
     color: #AAAAAA;
     font-size: 1.3em;
     text-align: justify;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.row {
+  display: flex;
+}
+
+.col-2 {
+  flex: 50.00%;
+}
+
+.col-3 {
+  flex: 33.33%;
+}
+
+.col-4 {
+  flex: 25%;
+}
+.col-4-test{
+    position: relative;
+    width: 33.33333%;
+}
+
+.col-6 {
+  flex: 16.66%;
+}
+
+.center {
+  text-align: center;
+}
+
+.centerContent {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* The navigation bar */
+.navbar-custom {
+  width: 100%;
+   background-color: rgba(15,15,15,0.5);
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   top: 0;
+   text-align: center;
+   position: fixed;
+   z-index: 1;
+   top: 0;
+}
+
+.navbar-custom li {
+  display: inline;
+}
+
+/* Links inside the navbar */
+.link-item {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5em;
+  margin-bottom: 5px;
+  padding: 0 2%;
+}
+
+.list-item {
+  padding: 1%;
+}
+
+#seal {
+    position: relative;
+    top: 5px;
+    margin-right: 10px;
+}
+
+/* Header */
+.headerContainer {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+#headerimg {
+  width: 100%;
+  height: 30%;
+  top: 0;
+  left: 0;
+  background-image: url("img/header.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#headerlogo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  max-width: 300px;
+  width: 100%;
+}
+
+.blackBarTop::before {
+  content: "";
+  display: block;
+  height: 20px;
+  background-image: url("img/black_texture_flip.png");
+  background-repeat: repeat-x;
+  background-position: top;
+}
+
+.blackBarBottom::after {
+  content: "";
+  display: block;
+  height: 100%;
+  margin-top: -20px;
+  background-image: url("img/black_texture.png");
+  background-repeat: repeat-x;
+  background-position: bottom;
+}
+
+
+/* Introduction */
+#forum {
+  margin-top: 3.3%;
+}
+
+#rules {
+  margin-top: 3.3%;
+}
+
+/* Parallax image */
+#miniatures {
+  background-image: url("img/miniatures.jpg");
+  height: 20%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#worldmap {
+  background-image: url("img/worldMap.png");
+  height: 20%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* The Scroll */
+#thescroll {
+  text-align: center;
+}
+
+#thescroll .paragraph{
+  text-align: justify;
+}
+
+#scrollIcon {
+  margin: 2% 0 2% 0;
+}
+.conte {
+    width: 80%;
+    overflow: auto;
+}
+
+#mostRecentScroll {
+  float: right;
+  width: 80%;
+  margin: 5% 0 5% 0;
+}
+
+.scrollItem img {
+  display: none;
+}
+
+#scrollArchive {
+  margin-top: 50%;
+}
+
+/* Armies */
+#theworld {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#worldIcon {
+  margin-bottom: 2.5%;
+  margin-top: 2.5%;
+}
+
+.armies {
+
+}
+
+.armyContainer {
+  width: 100%;
+    /* margin-left: 1%;
+    margin-top: 1%; */
+}
+
+.armyImage {
+  width: 25%;
+  float: left;
+  margin-top: 1%;
+}
+
+.middle {
+  display: none;
+}
+
+}/*--- @media all---*/
+
+/*------- =============== ---------*/
+@media screen and (min-width:481px) {
+/* less MEDIUM (landscape mobile) */
+body {
+  background-color: violet;
+}
+
+}/*--- @media 481px---*/
+
+
+
+/*------- =============== ---------*/
+@media screen and (min-width:641px) {
+/* MEDIUM (landscape mobile & tablet) */
+body {
+  background-color: blue;
+}
+
+}/*--- @media 641---*/
+
+/*------- =============== ---------*/
+@media screen and (min-width:991px) {
+/* LARGE (landscape tablet & small desktop screen) */
+body {
+  background-color: brown;
+}
+
+}/*--- @media 991---*/
+
+/*------- =============== ---------*/
+@media screen and (min-width:1200px) {
+/* XLARGE (desktop screen ) */
+body {
+  background: yellow;
+}
+
+background-color: white; */
+} /*--- @media 1200---*/
+
+
+/*------- =============== ---------*/
+@media screen and (min-width:1441px) {
+  body {
+    background-color: cyan;
+  }
+
+/* XXLARGE (large desktop screen) */
+}/*--- @media 1441---*/
+
+/*------- =============== ---------*/
+@media screen and (min-width:1681px) {
+/* more XXLARGE (ultra large desktop screen).  */
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Crimson Text', regular;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+}
+
+a {
+  color: #FFC85A;
+  text-decoration: none;
+}
+
+h4 {
+  margin-bottom: 2%;
+}
+
+a:hover {
+  transition: color 2s;
+  color: #94090d;
+  text-decoration: none;
+}
+
+.title {
+  font-size: 1.6em;
+  text-align: center;
+}
+
+.paragraph {
+    color: #AAAAAA;
+    font-size: 1.3em;
+    text-align: justify;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .row {
@@ -172,7 +481,6 @@ a:hover {
   margin-top: 3.3%;
 }
 
-
 /* Parallax image */
 #miniatures {
   background-image: url("img/miniatures.jpg");
@@ -194,33 +502,58 @@ a:hover {
 
 /* The Scroll */
 #thescroll {
-  margin: 2% 0 2% 0;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  width: 80%;
+  overflow: auto;
+
 }
 
 #scrollIcon {
   margin: 2% 0 2% 0;
 }
 
+.conte {
+  margin: auto;
+}
+
 #mostRecentScroll {
-  float: right;
-  width: 60%;
-  margin-top: 4%;
+  padding: 0;
+  margin: 0;
+  margin-right: 3%;
+  width: 30%;
+  float: left;
 }
 
 .scrollItem img {
-  padding: 2.5% 0.5% 1% 0;
-  width: 20%;
+  padding: 0;
+  padding: 0 1% 1% 0;
+  margin: 0;
+  width: 15%;
+  display: inline-block;
 }
 
-#scrollArchive {
-  float: right;
-  margin-right: 20%;
+
+#archives {
+  text-align: right;
+  margin-right: 13%;
 }
 
 /* Armies */
 #theworld {
   text-align: center;
-  margin: 2.5% auto 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+
+}
+
+#theWorldText {
+  text-align: center;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #worldIcon {
@@ -228,21 +561,18 @@ a:hover {
 }
 
 .armies {
-  margin-left: 20%;
-  margin-right: 20%;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .armyContainer {
-    display: inline-block;
-    position: relative;
-    width: 20%;
-    /* float: left; */
-    margin-left: 2%;
-    margin-bottom: 1%;
-}
-
-.armyContainer:nth-of-type(4n) {
-  clear: left;
+  display: inline-block;
+  position: relative;
+  width: 20%;
+  overflow: auto;
+  margin: auto;
 }
 
 .armyImage {
@@ -250,12 +580,13 @@ a:hover {
   display: block;
   width: 100%;
   height: auto;
-  transition: .5s ease;
+  transition: 0.5s ease;
   backface-visibility: hidden;
   background:rgba(0,0,0,0.6);
 }
 
 .middle {
+  display: block;
   opacity: 0;
   transition: .5s ease;
   position: absolute;
@@ -280,150 +611,7 @@ a:hover {
 
 .armyText {
   color: #FFC85A;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
-/****************************/
-/* VIEWPORT: Bigger screens */
-@media screen and (max-width: 1367px) {
-  body {
-    background: green;
-  }
-}
-
-/*****************************/
-/* VIEWPORT: Smaller screens */
-@media only screen and (max-width: 667px) {
-  body {
-    background: blue;
-  }
-}
-
-/******************************/
-/* VIEWPORT: Smallest screens */
-@media only screen and (max-width: 375px) {
-  /* Global settings */
-  body {
-    background: black;
-    color: white;
-    font-family: cambria;
-  }
-
-  .navbar {
-   /* height: 13em; */
-   text-align: center;
-   background-color: rgba(0,0,255,0) !important;
-   position: static;
-  }
-
-  .navbar li {
-    display: block;
-    background-color: rgba(15, 15, 15, 1);
-    border: 1px solid white;
-    margin-top: 0.1em;
-    width: 100%;
-  }
-
-
-#forum {
-  display: none;
-}
-
-#rules {
-  display: none;
-}
-
-/* Parallax images */
-.miniatures {
-  height: 20%;
-}
-
-#thescroll {
-  margin: 5% 0 5% 0;
-}
-
-#mostRecentScroll {
-  width: 95%;
-  padding-right: 5%;
-  margin-top: 5.5em;
-}
-
-.scrollItem img {
-  width: 40%;
-  padding-left: 1%;
-}
-
-.worldMap {
-  height: 20%;
-}
-
-
-#theworld {
-  text-align: left;
-}
-
-#theworld .col-4 {
-  display: none;
-}
-
-#armies .col-4 {
-  display: inline-block;
-}
-
-#armies {
-  text-align: center;
-}
-
-.armyContainer {
-    float: none;
-    display: inline-block;
-}
-
-.armyImage {
-  max-width: 150px;
-  max-height: 150px;
-  padding: 0;
-}
-
-.middle {
-  display: none;
-}
-.armyImage:hover {
-  opacity: 1;
-}
-
-}
-/*--- ========= ---*/
-@media only screen {
-/* SMALL all device */
-}/*--- @media all---*/
-
-/*------- =============== ---------*/
-@media screen and (min-width:481px) {
-/* less MEDIUM (landscape mobile) */
-}/*--- @media 481px---*/
-
-/*------- =============== ---------*/
-@media screen and (min-width:641px) {
-/* MEDIUM (landscape mobile & tablet) */
-}/*--- @media 641---*/
-
-/*------- =============== ---------*/
-@media screen and (min-width:991px) {
-/* LARGE (landscape tablet & small desktop screen) */
-}/*--- @media 991---*/
-
-/*------- =============== ---------*/
-@media screen and (min-width:1200px) {
-/* XLARGE (desktop screen ) */
-} /*--- @media 1200---*/
-
-/*------- =============== ---------*/
-@media screen and (min-width:1441px) {
-/* XXLARGE (large desktop screen) */
-}/*--- @media 1441---*/
-
-/*------- =============== ---------*/
-@media screen and (min-width:1681px) {
-/* more XXLARGE (ultra large desktop screen).  */
 }/*--- @media 1681---*/
