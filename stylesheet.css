@@ -144,8 +144,14 @@ h4 {
 
 
 /* Introduction */
+#flexContainer {
+  display: box;
+  box-orient: vertical;
+
+}
 #forum {
   margin-top: 3.3%;
+  box-ordinal-group:
 }
 
 #rules {
@@ -241,6 +247,12 @@ body {
   background-color: violet;
 }
 
+#seal {
+  display: block;
+  top:0;
+
+}
+
 }/*--- @media 481px---*/
 
 
@@ -332,26 +344,6 @@ a:hover {
   display: flex;
 }
 
-.col-2 {
-  flex: 50.00%;
-}
-
-.col-3 {
-  flex: 33.33%;
-}
-
-.col-4 {
-  flex: 25%;
-}
-.col-4-test{
-    position: relative;
-    width: 33.33333%;
-}
-
-.col-6 {
-  flex: 16.66%;
-}
-
 .center {
   text-align: center;
 }
@@ -368,7 +360,6 @@ a:hover {
    list-style: none;
    margin: 0;
    padding: 0;
-   top: 0;
    text-align: center;
    position: fixed;
    z-index: 1;
@@ -376,7 +367,9 @@ a:hover {
 }
 
 .navbar-custom li {
-  display: inline;
+  display: inline-block;
+  padding: 0;
+  margin: 1.5%;
 }
 
 /* Links inside the navbar */
@@ -384,12 +377,12 @@ a:hover {
   text-decoration: none;
   display: inline-block;
   font-size: 1.5em;
-  margin-bottom: 15px;
-  padding: 10 15 0 15;
+  margin: 0;
+  padding: 0;
 }
 
 .list-item {
-  padding: 1%;
+
 }
 
 .list-item:hover {
@@ -397,8 +390,8 @@ a:hover {
 }
 
 #seal {
-    position: relative;
-    top: 10px;
+  margin-top: 15px;
+  margin-bottom:-15px;
 }
 
 /* Header */
