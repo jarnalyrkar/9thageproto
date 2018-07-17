@@ -19,6 +19,10 @@ body, html {
 
 a {
   color: #FFC85A;
+}
+
+a:hover {
+  color: #FFC85A;
   text-decoration: none;
 }
 
@@ -151,7 +155,6 @@ h4 {
 }
 #forum {
   margin-top: 3.3%;
-  box-ordinal-group:
 }
 
 #rules {
