@@ -1,8 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Crimson+Text");
 /* Global settings */
 body {
   background: black;
   color: white;
-  font-family: cambria;
+  font-family: 'Crimson Text', regular;
 
 }
 
@@ -37,6 +38,7 @@ a:hover {
 .paragraph {
     color: #AAAAAA;
     font-size: 1.3em;
+    text-align: justify;
 }
 
 .row {
@@ -226,16 +228,21 @@ a:hover {
 }
 
 .armies {
-  margin-left: 10%;
-  margin-right: auto;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 .armyContainer {
+    display: inline-block;
     position: relative;
     width: 20%;
-    float: left;
+    /* float: left; */
     margin-left: 2%;
     margin-bottom: 1%;
+}
+
+.armyContainer:nth-of-type(4n) {
+  clear: left;
 }
 
 .armyImage {
