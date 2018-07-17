@@ -161,7 +161,7 @@ h4 {
 /* Parallax image */
 #miniatures {
   background-image: url("img/miniatures.jpg");
-  height: 20%;
+  height: 30%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -169,7 +169,7 @@ h4 {
 
 #worldmap {
   background-image: url("img/worldMap.png");
-  height: 20%;
+  height: 30%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
