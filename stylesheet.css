@@ -144,8 +144,14 @@ h4 {
 
 
 /* Introduction */
+#flexContainer {
+  display: box;
+  box-orient: vertical;
+  
+}
 #forum {
   margin-top: 3.3%;
+  box-ordinal-group:
 }
 
 #rules {
