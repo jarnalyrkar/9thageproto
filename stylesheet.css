@@ -26,12 +26,6 @@ h4 {
   margin-bottom: 2%;
 }
 
-a:hover {
-  transition: color 2s;
-  color: #94090d;
-  text-decoration: none;
-}
-
 .title {
   font-size: 1.6em;
   text-align: center;
@@ -49,26 +43,6 @@ a:hover {
   display: flex;
 }
 
-.col-2 {
-  flex: 50.00%;
-}
-
-.col-3 {
-  flex: 33.33%;
-}
-
-.col-4 {
-  flex: 25%;
-}
-.col-4-test{
-    position: relative;
-    width: 33.33333%;
-}
-
-.col-6 {
-  flex: 16.66%;
-}
-
 .center {
   text-align: center;
 }
@@ -81,7 +55,7 @@ a:hover {
 /* The navigation bar */
 .navbar-custom {
   width: 100%;
-   background-color: rgba(15,15,15,0.5);
+   background-color: rgba(0,0,0,1);
    list-style: none;
    margin: 0;
    padding: 0;
@@ -106,20 +80,24 @@ a:hover {
 }
 
 .list-item {
-  padding: 1%;
+  padding: 0.1%;
+}
+
+.list-item a {
+  text-decoration: none;
+
 }
 
 #seal {
-    position: relative;
-    top: 5px;
-    margin-right: 10px;
+  display:none;
 }
 
 /* Header */
 .headerContainer {
   position: relative;
-  top: 0;
+  top: 4%;
   left: 0;
+  margin-bottom: 6%;
 }
 
 #headerimg {
