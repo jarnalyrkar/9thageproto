@@ -99,9 +99,7 @@ h4 {
 /* Header */
 .headerContainer {
   position: relative;
-  /* top: 4%; */
   left: 0;
-  margin-bottom: 6%;
 }
 
 #headerimg {
@@ -122,7 +120,7 @@ h4 {
   top: 0;
   right: 0;
   bottom: 0;
-  margin: auto;
+  margin: 0 auto;
   max-width: 300px;
   width: 100%;
 }
@@ -154,6 +152,9 @@ h4 {
 }
 
 /* Introduction */
+#introduction {
+  margin-top: 3%;
+}
 #flexContainer {
   display: box;
 }
@@ -371,6 +372,7 @@ main {
 }
 
 /* Introduction */
+
 #forum {
   /* margin-top: 3.3%; */
   width: 100%;
