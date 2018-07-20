@@ -30,6 +30,7 @@ a:hover {
 
 h4 {
   margin-bottom: 2%;
+  margin-top: 4%;
 }
 
 .title {
@@ -772,9 +773,6 @@ width: 100%;
   order: 3;
   width: 25%;
 }
-
-
-background-color: white; */
 } /*--- @media 1200---*/
 
 
@@ -875,11 +873,11 @@ a:hover {
 }
 
 .list-item {
-
+  padding-left: 2%;
 }
 
 .list-item:hover {
-  background-color: #444444;
+  background-color: rgba(16, 16, 16, 0.5);
 }
 
 #seal {
@@ -939,13 +937,11 @@ a:hover {
 /* Introduction */
 .columns {
   padding: 0;
-  margin-left: 1%;
   margin-bottom: 0;
 }
 
 #introduction {
-  margin-left: 10%;
-  margin-right: 10%;
+  margin: auto;
   padding: 0;
   margin-top: 0;
   margin-bottom: 3%;
@@ -955,19 +951,17 @@ a:hover {
 #forum {
   margin-top: 3.3%;
   order: 1;
-  width: 10%;
 }
 
 #introductionText {
   order: 2;
-  width: 60%;
+  width: 50%;
   margin: auto;
 }
 
 #rules {
   margin-top: 3.3%;
   order: 3;
-  width: 10%;
 }
 
 /* Parallax image */
@@ -992,7 +986,6 @@ a:hover {
 /* The Scroll */
 #thescroll {
   margin: 0 auto;
-  padding: 0;
   text-align: center;
   width: 80%;
   overflow: auto;
@@ -1026,7 +1019,9 @@ a:hover {
 
 #archives {
   text-align: right;
-  margin-right: 13%;
+  width: 100%;
+  padding-right: 3%;
+  font-size: 1.5em;
 }
 
 /* Armies */
@@ -1035,7 +1030,6 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
   width: 80%;
-
 }
 
 #theWorldText {
