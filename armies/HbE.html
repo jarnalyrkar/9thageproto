@@ -13,12 +13,33 @@
 
 <body>
 
-  <ul class="navbar-custom">
-    <li class="list-item"><a class="link-item" href="../index.html"><img id="seal" src="../img/seal.png" alt="9th Age Seal"></a></li>
-    <li class="list-item"><a class="link-item" href="https://www.the-ninth-age.com/index.php?simple-page/">Downloads</a></li>
-    <li class="list-item"><a class="link-item" href="../index.html#theworld">The World</a></li>
-    <li class="list-item"><a class="link-item" href="https://www.the-ninth-age.com/index.php?board-list/">Forum</a></li>
-  </ul>
+  <nav>
+  	<ul>
+  		<li><a href="#"><img id="seal" src="../img/seal.png" alt="9th Age Seal"></a></li>
+  		<li><a href="https://www.the-ninth-age.com/index.php?simple-page/">Downloads</a></li>
+  		<li><a href="#">Factions</a>
+    			<ul>
+            <li class="active"><a href="HbE.html"><img class="faction-icons" src="../img/armies/HbE-icon.png">Highborn Elves</a></li>
+            <li><a href="DE.html"><img class="faction-icons" src="../img/armies/DE-icon.png">Dread Elves</a></li>
+            <li><a href="SE.html"><img class="faction-icons" src="../img/armies/SE-icon.png">Sylvan Elves</a></li>
+            <li><a href="SA.html"><img class="faction-icons" src="../img/armies/SA-icon.png">Saurian Ancients</a></li>
+            <li><a href="KoE.html"><img class="faction-icons" src="../img/armies/KoE-icon.png">Kingdom of Equitaine</a></li>
+            <li><a href="EoS.html"><img class="faction-icons" src="../img/armies/EoS-icon.png">Empire of Sonnstahl</a></li>
+            <li><a href="VC.html"><img class="faction-icons" src="../img/armies/VC-icon.png">Vampire Covenants</a></li>
+            <li><a href="UD.html"><img class="faction-icons" src="../img/armies/UD-icon.png">Undying Dynasties</a></li>
+            <li><a href="DH.html"><img class="faction-icons" src="../img/armies/DH-icon.png">Dwarven Holds</a></li>
+            <li><a href="ID.html"><img class="faction-icons" src="../img/armies/ID-icon.png">Infernal Dwarves</a></li>
+            <li><a href="OK.html"><img class="faction-icons" src="../img/armies/OK-icon.png">Ogre Khans</a></li>
+            <li><a href="OnG.html"><img class="faction-icons" src="../img/armies/OnG-icon.png">Orcs and Goblins</a></li>
+            <li><a href="WDG.html"><img class="faction-icons" src="../img/armies/WDG-icon.png">Warriors of the Dark Gods</a></li>
+            <li><a href="DL.html"><img class="faction-icons" src="../img/armies/DL-icon.png">Daemon Legions</a></li>
+            <li><a href="BH.html"><img class="faction-icons" src="../img/armies/BH-icon.png">Beast Herds</a></li>
+            <li><a href="VS.html"><img class="faction-icons" src="../img/armies/VS-icon.png">Vermin Swarm</a></li>
+    			</ul>
+  		</li>
+  		<li><a href="#">Forum</a></li>
+  	</ul>
+  </nav>
 
   <main class="main">
     <header class="headerContainer">
@@ -35,24 +56,7 @@
           <!-- first column -->
           <div class="col-sm" id="factionNav">
 
-            <ul id="faction-list">
-              <li class="active"><a href="HbE.html"><img src="../img/armies/HbE-icon.png">Highborn Elves</a></li>
-              <li><a href="DE.html"><img src="../img/armies/DE-icon.png">Dread Elves</a></li>
-              <li><a href="SE.html"><img src="../img/armies/SE-icon.png">Sylvan Elves</a></li>
-              <li><a href="SA.html"><img src="../img/armies/SA-icon.png">Saurian Ancients</a></li>
-              <li><a href="KoE.html"><img src="../img/armies/KoE-icon.png">Kingdom of Equitaine</a></li>
-              <li><a href="EoS.html"><img src="../img/armies/EoS-icon.png">Empire of Sonnstahl</a></li>
-              <li><a href="VC.html"><img src="../img/armies/VC-icon.png">Vampire Covenants</a></li>
-              <li><a href="UD.html"><img src="../img/armies/UD-icon.png">Undying Dynasties</a></li>
-              <li><a href="DH.html"><img src="../img/armies/DH-icon.png">Dwarven Holds</a></li>
-              <li><a href="ID.html"><img src="../img/armies/ID-icon.png">Infernal Dwarves</a></li>
-              <li><a href="OK.html"><img src="../img/armies/OK-icon.png">Ogre Khans</a></li>
-              <li><a href="OnG.html"><img src="../img/armies/OnG-icon.png">Orcs and Goblins</a></li>
-              <li><a href="WDG.html"><img src="../img/armies/WDG-icon.png">Warriors of the Dark Gods</a></li>
-              <li><a href="DL.html"><img src="../img/armies/DL-icon.png">Daemon Legions</a></li>
-              <li><a href="BH.html"><img src="../img/armies/BH-icon.png">Beast Herds</a></li>
-              <li><a href="VS.html"><img src="../img/armies/VS-icon.png">Vermin Swarm</a></li>
-            </ul>
+
 
           </div>
 
@@ -112,4 +116,5 @@
     </div>
     </main>
   </body>
+  <script src="dropdown.js"></script>
 </html>

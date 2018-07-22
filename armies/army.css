@@ -253,20 +253,20 @@ body, html {
 
 }
 
-a {
+/* a {
   color: #FFC85A;
   text-decoration: none;
-}
+} */
 
 h4 {
   margin-bottom: 2%;
 }
 
-a:hover {
+/* a:hover {
   transition: color 2s;
   color: #94090d;
   text-decoration: none;
-}
+} */
 
 .title {
   font-size: 1.6em;
@@ -295,7 +295,7 @@ a:hover {
 }
 
 /* The navigation bar */
-.navbar-custom {
+/* .navbar-custom {
   width: 100%;
   background-color: rgba(15,15,15,0.5);
   list-style: none;
@@ -329,35 +329,110 @@ a:hover {
 
 .list-item:hover {
   background-color: rgba(16, 16, 16, 0.5);
-}
+} */
 
 #seal {
   margin-top: 15px;
   margin-bottom:-7px;
 }
 
+/* Experimental nav START */
+.faction-icons {
+  width: 48px;
+  padding-right: 5%;
+}
+
+nav {
+  width: 100%;
+  background-color: rgba(15,15,15,0.5);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align:center;
+  position:fixed;
+  z-index: 1;
+  top: 0;
+  height: 60px;
+}
+
+nav ul{
+  background-color: rgba(15,15,15,0.5);
+  text-align: center;
+  list-style:none;
+  padding:0 20px;
+  margin: 0;
+  height: 60px;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  width: 230px;
+  text-align: justify;
+  color: white;
+  display: block;
+  text-decoration:none;
+  float: left;
+  height: 60px;
+  line-height: 60px;
+}
+
+nav ul li:hover {
+  background: #999999;
+  color: black;
+}
+
+.army-submenu {
+  /* background-color: pink; */
+}
+
+nav ul li:hover > a{
+    color:#FFFFFF;
+}
+
+nav ul li:hover > ul {
+  display:inline;
+  height: 150px;
+}
+
+nav ul ul {
+  background: #000000;
+  padding:0;
+  text-align: left;
+  display:none;
+  width: 100%;
+  position: absolute;
+  top: 60px;
+  left: 0px;
+}
+
+
+/* Experimental nav END */
+
 /* Header */
 .headerContainer {
   position: relative;
   text-align: center;
   color: white;
+  z-index: -5;
 }
 
 #headerimg {
-  /* image file is set in separate css
-    files for each individual army */
     opacity: 1;
     display: inline-block;
     width: 100%;
     height: 70%;
     padding: 0;
     margin: 0;
+    z-index: -2;
 }
 
-main {
+/* main {
   padding: 0;
   margin: 0;
-}
+} */
 
 #headerText {
   padding: 2%;
@@ -384,6 +459,65 @@ main {
 #rules {
   /* margin-top: 3.3%; */
   width: 100%;
+}
+
+
+/* Dropdown Button */
+.dropbtn {
+   background-color: #3498DB;
+   color: white;
+   padding: 16px;
+   font-size: 16px;
+   border: none;
+   cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+   background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+   position: relative;
+   display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    overflow: auto;
+   display: none;
+   position: absolute;
+   background-color: #000000;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+}
+
+.dropdown-content li {
+  font-size: 10px;
+}
+.dropdown-content ul {
+  width: 900px;
+}
+.dropdown-content li img {
+  width: 50%;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+   color: white;
+   text-decoration: none;
+   display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display:list-item;
 }
 
 
