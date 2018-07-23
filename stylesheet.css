@@ -1,3 +1,5 @@
+/*-- CSS modified by CASP for design aspect. WIP  --*/
+
 @import url("https://fonts.googleapis.com/css?family=Crimson+Text");
 
 
@@ -93,6 +95,16 @@ h4 {
 .list-item a {
   text-decoration: none;
 }
+/*T9A ico*/
+.list-item:first-child a {
+  padding: 0;
+}
+.list-item:first-child:hover {
+  background: none !important;
+}
+.list-item:first-child a img {
+	margin: -15px 0 0 0;
+}
 
 #seal {
   display:none;
@@ -185,6 +197,9 @@ h4 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.container-fluid{
+	padding: 0;
 }
 
 /* The Scroll */
@@ -356,9 +371,7 @@ body {
 }
 
 #seal {
-  display: block;
-  padding: 0;
-  margin-bottom: -15px;
+  display: inline-block;
 }
 
 }/*--- @media 481px---*/
@@ -464,8 +477,8 @@ h4 {
 }
 
 a:hover {
-  transition: color 2s;
-  color: #94090d;
+  transition: color 0.5s;
+  color: #e15103;
   text-decoration: none;
 }
 
@@ -498,7 +511,7 @@ a:hover {
 /* The navigation bar */
 .navbar-custom {
   width: 100%;
-  background-color: rgba(15,15,15,0.5);
+  background-color: rgba(15,15,15,0.8);
   list-style: none;
   margin: 0;
   padding: 0;
@@ -511,8 +524,7 @@ a:hover {
 .navbar-custom li {
   display: inline-block;
   padding: 0;
-  margin-left: 2%;
-  margin-bottom: 1%;
+  margin: 0;
 
 }
 
@@ -530,13 +542,9 @@ a:hover {
 }
 
 .list-item:hover {
-  background-color: #444444;
+  background-color: #000;
 }
 
-#seal {
-  margin-top: 15px;
-  margin-bottom:-7px;
-}
 
 /* Header */
 .headerContainer {
@@ -742,6 +750,9 @@ a:hover {
   font-size: 1.2em;
 }
 
+.list-item a {
+	padding: 5px 10px;
+	}
 
 }/*--- @media 991---*/
 
@@ -773,6 +784,9 @@ width: 100%;
   order: 3;
   width: 25%;
 }
+.list-item a {
+	padding: 10px 15px;
+	}
 } /*--- @media 1200---*/
 
 
@@ -809,12 +823,6 @@ a {
 
 h4 {
   margin-bottom: 2%;
-}
-
-a:hover {
-  transition: color 2s;
-  color: #94090d;
-  text-decoration: none;
 }
 
 .title {
@@ -859,8 +867,6 @@ a:hover {
 .navbar-custom li {
   display: inline-block;
   padding: 0;
-  margin-left: 2%;
-  margin-bottom: 1%;
 }
 
 /* Links inside the navbar */
@@ -878,11 +884,6 @@ a:hover {
 
 .list-item:hover {
   background-color: rgba(16, 16, 16, 0.5);
-}
-
-#seal {
-  margin-top: 15px;
-  margin-bottom:-7px;
 }
 
 /* Header */
