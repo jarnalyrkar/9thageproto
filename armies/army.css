@@ -14,7 +14,6 @@ body, html {
   width: 100%;
   margin: 0;
   padding: 0;
-
 }
 
 a {
@@ -253,20 +252,20 @@ body, html {
 
 }
 
-/* a {
+a {
   color: #FFC85A;
   text-decoration: none;
-} */
+}
 
 h4 {
   margin-bottom: 2%;
 }
 
-/* a:hover {
+a:hover {
   transition: color 2s;
   color: #94090d;
   text-decoration: none;
-} */
+}
 
 .title {
   font-size: 1.6em;
@@ -295,53 +294,6 @@ h4 {
 }
 
 /* The navigation bar */
-/* .navbar-custom {
-  width: 100%;
-  background-color: rgba(15,15,15,0.5);
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-}
-
-.navbar-custom li {
-  display: inline-block;
-  padding: 0;
-  margin-left: 2%;
-  margin-bottom: 1%;
-}
-
-/* Links inside the navbar */
-.link-item {
-  text-decoration: none;
-  display: inline-block;
-  font-size: 1.7em;
-  margin: 0px;
-  padding: 0;
-}
-
-.list-item {
-  padding-left: 2%;
-}
-
-.list-item:hover {
-  background-color: rgba(16, 16, 16, 0.5);
-} */
-
-#seal {
-  margin-top: 15px;
-  margin-bottom:-7px;
-}
-
-/* Experimental nav START */
-.faction-icons {
-  width: 48px;
-  padding-right: 5%;
-}
-
 nav {
   width: 100%;
   background-color: rgba(15,15,15,0.5);
@@ -355,12 +307,29 @@ nav {
   height: 60px;
 }
 
+.navbar-custom {
+  width: 100%;
+  background-color: rgba(15,15,15,0.5);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+}
+
+nav li {
+  margin: 0 2%;
+}
+
 nav ul{
   background-color: rgba(15,15,15,0.5);
   text-align: center;
   list-style:none;
   padding:0 20px;
   margin: 0;
+  padding: 0;
   height: 60px;
 }
 
@@ -369,9 +338,7 @@ nav ul li {
 }
 
 nav ul li a {
-  width: 230px;
-  text-align: justify;
-  color: white;
+  color: #FFC85A;
   display: block;
   text-decoration:none;
   float: left;
@@ -380,16 +347,14 @@ nav ul li a {
 }
 
 nav ul li:hover {
-  background: #999999;
-  color: black;
-}
-
-.army-submenu {
-  /* background-color: pink; */
+  background: black;
+  color: white;
 }
 
 nav ul li:hover > a{
-    color:#FFFFFF;
+  transition: color 2s;
+  color: #94090d;
+  text-decoration: none;
 }
 
 nav ul li:hover > ul {
@@ -400,16 +365,55 @@ nav ul li:hover > ul {
 nav ul ul {
   background: #000000;
   padding:0;
-  text-align: left;
-  display:none;
+  display: none;
   width: 100%;
   position: absolute;
   top: 60px;
   left: 0px;
 }
 
+.navbar-custom li {
+  text-align: center;
+  display: inline-block;
+  padding: 0;
+  margin-left: 1%;
+  margin-bottom: 1%;
+}
 
-/* Experimental nav END */
+.sublist .sublist-item {
+  font-size: 0.8em;
+  padding: 0 0.75% 0.5%;
+  margin: 0;
+}
+
+
+.faction-icons {
+  width: 48px;
+  padding-right: 5%;
+}
+
+
+/* Links inside the navbar */
+.link-item {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.7em;
+}
+
+.sublist-item a {
+  color: white;
+}
+
+.list-item:hover {
+  background-color: rgba(16, 16, 16, 0.5);
+}
+
+#seal {
+  margin-top: 15px;
+  margin-bottom:-7px;
+}
 
 /* Header */
 .headerContainer {
@@ -485,7 +489,7 @@ nav ul ul {
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
-    overflow: auto;
+  overflow: auto;
    display: none;
    position: absolute;
    background-color: #000000;
