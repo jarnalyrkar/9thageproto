@@ -1,0 +1,68 @@
+body {
+width: 100%;
+}
+
+.mainNav {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: inline-block;
+  text-align: center;
+  position: fixed;
+  z-index: 1;
+}
+
+.mainUl {
+  list-style: none;
+  margin: auto 0;
+  color: white;
+  height: 20px;
+}
+
+.list-item {
+  text-align: center;
+  display: inline-block;
+}
+
+.list-item a {
+  color: white;
+  text-decoration: none;
+}
+
+.mainNav .mainUl .list-item:hover > .sublist {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 60px;
+}
+
+.mainNav .mainUl .sublist {
+  display: none;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 19px;
+  left: 0px;
+  margin: auto;
+  border: white 2px solid;
+}
+
+.sublist-item {
+  list-style: none;
+  flex: 1 0 12%;
+}
+
+.sublist-item:first-child  {
+  left: 0;
+  border: white 2px solid;
+}
+
+.sublist-item a {
+  color: white;
+  text-decoration: none;
+}
+
+.sublist-item a:hover {
+  color: red;
+}
