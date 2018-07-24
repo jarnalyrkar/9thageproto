@@ -328,9 +328,9 @@ nav ul{
   text-align: center;
   list-style:none;
   padding:0 20px;
-  margin: 0;
   padding: 0;
   height: 60px;
+
 }
 
 nav ul li {
@@ -342,7 +342,7 @@ nav ul li a {
   display: block;
   text-decoration:none;
   float: left;
-  height: 60px;
+  height: 65px;
   line-height: 60px;
 }
 
@@ -358,8 +358,9 @@ nav ul li:hover > a{
 }
 
 nav ul li:hover > ul {
-  display:inline;
-  height: 150px;
+  display: block;
+  margin: auto;
+  height: 350px;
 }
 
 nav ul ul {
@@ -381,15 +382,19 @@ nav ul ul {
 }
 
 .sublist .sublist-item {
-  font-size: 0.8em;
-  padding: 0 0.75% 0.5%;
-  margin: 0;
+  font-size: 0.7em;
+  padding: 1% 0.75% 0.5%;
+  margin: auto;
+  width: 11.25%;
+  height: 150px;
 }
 
 
 .faction-icons {
   width: 48px;
-  padding-right: 5%;
+  height: 48px;
+  margin: auto;
+  text-align: center;
 }
 
 
@@ -433,11 +438,6 @@ nav ul ul {
     z-index: -2;
 }
 
-/* main {
-  padding: 0;
-  margin: 0;
-} */
-
 #headerText {
   padding: 2%;
   border: 2px solid white;
@@ -453,7 +453,6 @@ nav ul ul {
 /* Introduction */
 
 #forum {
-  /* margin-top: 3.3%; */
   width: 100%;
 }
 
@@ -461,7 +460,6 @@ nav ul ul {
 }
 
 #rules {
-  /* margin-top: 3.3%; */
   width: 100%;
 }
 
