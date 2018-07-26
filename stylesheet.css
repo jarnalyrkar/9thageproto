@@ -104,22 +104,6 @@ h4 {
 	text-decoration: none;
 	}
 	
-/*T9A ico
-.list-item:first-child a {
-  padding: 0;
-	}
-	
-.list-item:first-child:hover {
-  background: none !important;
-	}
-	
-.list-item:first-child a img {
-	margin: -15px 0 0 0;
-	}
-#seal {
-  display:none;
-	}*/
-
 /* Header */
 .headerContainer {
   position: relative;
@@ -336,11 +320,6 @@ h4 {
 .list-item {
   padding: 2%;
 	}
-/*
-#seal {
-  display: inline-block;
-	}
-	*/
 
 }/*--- @media 481px---*/
 
