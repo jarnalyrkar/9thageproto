@@ -9,7 +9,7 @@
 /* Global settings */
 body {
   background-color: black;
-  color: white;
+  color: #dce0df;
   font-family: 'Cormorant Garamond', serif;
   font-weight: 500;
 	}
@@ -34,7 +34,8 @@ h2 {
   margin-bottom: 2%;
   margin-top: 4%;
   letter-spacing: 0.1em;
-  word-spacing: 0.2em;
+  word-spacing: 0.17em;
+  text-transform: uppercase;
 	}
 
 .title {
@@ -43,13 +44,12 @@ h2 {
 	}
 
 .paragraph {
-	color: #5b5b5b;
+	color: #7F7F7F;
 	font-size: 1.3em;
 	text-align: justify;
 	width: 100%;
-	margin: 0 auto;
+	margin: 0 auto 30px auto;
 	line-height: 1.2em;
-	letter-spacing: 0.02em;
 	}
 
 .row {
@@ -68,7 +68,7 @@ h2 {
 /* The navigation bar */
 .navbar-custom {
 	width: 100%;
-	background-color: rgba(15,15,15,0.8);
+	background-color: rgba(15,15,15,0.55);
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -121,44 +121,36 @@ h2 {
   right: 0;
   bottom: 0;
   margin: auto;
-  max-width: 300px;
-  width: 100%;
+  width: 290px;
 	}
 
 #headerimg {
-  width: 100%;
-  height: 30%;
-  top: 0;
-  left: 0;
-  background-image: url("img/header.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+	width: 100%;
+	height: 75%;
+	top: 0;
+	left: 0;
+	background: url("img/header.jpg") no-repeat center fixed; 
+	background-size: cover;
 	}
 
 .blackBarTop::before {
-  content: "";
-  display: block;
-  height: 20px;
-  background-image: url("img/black_texture_flip.png");
-  background-repeat: repeat-x;
-  background-position: top;
+	content: "";
+	display: block;
+	height: 20px;
+	background: url("img/black_texture_flip.png") repeat-x top;
 	}
 
 .blackBarBottom::after {
-  content: "";
-  display: block;
-  height: 100%;
-  margin-top: -20px;
-  background-image: url("img/black_texture.png");
-  background-repeat: repeat-x;
-  background-position: bottom;
+	content: "";
+	display: block;
+	height: 100%;
+	margin-top: -20px;
+	background: url("img/black_texture.png") repeat-x bottom;
 	}
 
 /* Introduction */
 #flexContainer {
-  display: box;
+	display: box;
 	}
 
 #forum {
@@ -293,6 +285,10 @@ h2 {
 @media screen and (min-width:481px) {
 /* less MEDIUM (landscape mobile) */
 
+#headerlogo{
+	width: 390px;
+}
+
 /* Introduction */
 #flexContainer {
   display: flex;
@@ -331,7 +327,10 @@ h2 {
 @media screen and (min-width:641px) {
 /* MEDIUM (landscape mobile & tablet) */
 
-	
+#headerlogo{
+	width: 490px;
+}
+
 /* Introduction */
 #introductionText {
   clear: both;
@@ -378,9 +377,12 @@ h2 {
 a:hover {
   transition: color 0.5s;
 	}
+	
+#headerlogo{
+	width: 590px;
+}
 /* The navigation bar */
 .navbar-custom {
-  background-color: rgba(15,15,15,0.8);
   min-height: 55px;
 	}
 
@@ -417,16 +419,14 @@ a:hover {
   top: 0;
 	}
 
-#headerimg {
-  height: 40%;
-	}
-
 #headerlogo {
   max-width: 720px;
 	}
 
 /* Introduction */
-
+#introductionText{
+	margin: 0 15%;
+}
 #rules {
   margin-top: 3.3%;
   order: 3;
@@ -538,7 +538,16 @@ a:hover {
 #top_logo img{
 	height: 36px;
 	}
+	
+#headerlogo{
+	width: 690px;
+}
+
 /* Introduction */
+#introductionText{
+	margin: 0 0 60px 0;
+}
+
 .columns {
 width: 100%;
 	}
@@ -579,11 +588,6 @@ width: 100%;
 /*------- =======7======= ---------*/
 @media screen and (min-width:1681px) {
 /* more XXLARGE (ultra large desktop screen).  */
-
-/* Header */
-#headerimg {
-  height: 80%;
-	}
 
 /* Introduction */
 .columns {
