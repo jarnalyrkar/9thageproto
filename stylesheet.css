@@ -26,7 +26,8 @@ a {
 	}
 
 a:hover {
-  text-decoration: underline;
+  color: #e15103;
+  text-decoration: none;
 	}
 
 h4 {
@@ -40,11 +41,13 @@ h4 {
 	}
 
 .paragraph {
-	color: #AAAAAA;
+	color: #999;
 	font-size: 1.3em;
 	text-align: justify;
 	width: 100%;
 	margin: 0 auto;
+	line-height: 1.2em;
+	letter-spacing: 0.02em;
 	}
 
 .row {
@@ -63,7 +66,7 @@ h4 {
 /* The navigation bar */
 .navbar-custom {
 	width: 100%;
-	background-color: rgba(0,0,0,1);
+	background-color: rgba(15,15,15,0.8);
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -79,7 +82,11 @@ h4 {
 .navbar-custom li {
   display: inline;
 	}
-
+	
+#top_logo{
+	display: none;
+	}
+	
 /* Links inside the navbar */
 .link-item {
 	text-decoration: none;
@@ -97,7 +104,7 @@ h4 {
 	text-decoration: none;
 	}
 	
-/*T9A ico*/
+/*T9A ico
 .list-item:first-child a {
   padding: 0;
 	}
@@ -109,10 +116,9 @@ h4 {
 .list-item:first-child a img {
 	margin: -15px 0 0 0;
 	}
-
 #seal {
   display:none;
-	}
+	}*/
 
 /* Header */
 .headerContainer {
@@ -330,10 +336,11 @@ h4 {
 .list-item {
   padding: 2%;
 	}
-
+/*
 #seal {
   display: inline-block;
 	}
+	*/
 
 }/*--- @media 481px---*/
 
@@ -343,6 +350,7 @@ h4 {
 @media screen and (min-width:641px) {
 /* MEDIUM (landscape mobile & tablet) */
 
+	
 /* Introduction */
 #introductionText {
   clear: both;
@@ -388,21 +396,31 @@ h4 {
 
 a:hover {
   transition: color 0.5s;
-  color: #e15103;
-  text-decoration: none;
 	}
 /* The navigation bar */
 .navbar-custom {
   background-color: rgba(15,15,15,0.8);
+  min-height: 55px;
 	}
 
 .navbar-custom li {
   display: inline-block;
   padding: 0;
   margin: 0;
-
 	}
-
+	
+#top_logo{
+	display: block;
+	position: fixed;
+	top: 15px;
+	left: 30px;
+	z-index: 99;
+	}
+	
+#top_logo img{
+	height: 25px;
+	}
+	
 /* Links inside the navbar */
 .link-item {
   margin: 0;
@@ -412,7 +430,6 @@ a:hover {
 .list-item:hover {
   background-color: #000;
 	}
-
 
 /* Header */
 .headerContainer {
@@ -528,7 +545,7 @@ a:hover {
 	}
 
 .list-item a {
-	padding: 5px 10px;
+	padding: 18px 15px;
 	}
 
 }/*--- @media 991---*/
@@ -537,6 +554,9 @@ a:hover {
 @media screen and (min-width:1200px) {
 /* XLARGE (desktop screen ) */
 
+#top_logo img{
+	height: 36px;
+	}
 /* Introduction */
 .columns {
 width: 100%;
@@ -563,7 +583,7 @@ width: 100%;
 	}
 	
 .list-item a {
-	padding: 10px 15px;
+	padding: 23px 15px;
 	}
 
 } /*--- @media 1200---*/
