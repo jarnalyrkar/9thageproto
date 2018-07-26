@@ -1,6 +1,6 @@
 /*-- CSS modified by CASP for design aspect. WIP  --*/
 
-@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400,500|Montserrat:400,700|Quattrocento:400,700');
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:500|Montserrat:400');
 
 
 /*--- ====1==== ---*/
@@ -128,7 +128,7 @@ h2 {
 	width: 100%;
 	height: 75%;
 	top: 0;
-	left: 0;
+	left: -30px;
 	background: url("img/header.jpg") no-repeat center fixed; 
 	background-size: cover;
 	}
