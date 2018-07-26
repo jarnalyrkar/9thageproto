@@ -581,13 +581,7 @@ width: 100%;
 
 /*------- =======6======= ---------*/
 @media screen and (min-width:1441px) {
-
 /* XXLARGE (large desktop screen) */
-}/*--- @media 1441---*/
-
-/*------- =======7======= ---------*/
-@media screen and (min-width:1681px) {
-/* more XXLARGE (ultra large desktop screen).  */
 
 /* Introduction */
 .columns {
@@ -628,6 +622,10 @@ width: 100%;
   padding-right: 3%;
   font-size: 1.5em;
 	}
+}/*--- @media 1441---*/
 
+/*------- =======7======= ---------*/
+@media screen and (min-width:1681px) {
+/* more XXLARGE (ultra large desktop screen).  */
 
 }/*--- @media 1681---*/
