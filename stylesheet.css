@@ -1,6 +1,6 @@
 /*-- CSS modified by CASP for design aspect. WIP  --*/
 
-@import url("https://fonts.googleapis.com/css?family=Crimson+Text");
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400,500|Montserrat:400,700|Quattrocento:400,700');
 
 
 /*--- ====1==== ---*/
@@ -10,113 +10,128 @@
 body {
   background-color: black;
   color: white;
-  font-family: 'Crimson Text', regular;
-}
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 500;
+	}
 
 body, html {
   height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
-
-}
+	}
 
 a {
   color: #FFC85A;
-}
+	}
 
 a:hover {
-  color: #FFC85A;
-  text-decoration: none;
-}
+  text-decoration: underline;
+	}
 
 h4 {
   margin-bottom: 2%;
   margin-top: 4%;
-}
+	}
 
 .title {
   font-size: 1.6em;
   text-align: center;
-}
+	}
 
 .paragraph {
-    color: #AAAAAA;
-    font-size: 1.3em;
-    text-align: justify;
-    width: 100%;
-    margin: 0 auto;
-}
+	color: #AAAAAA;
+	font-size: 1.3em;
+	text-align: justify;
+	width: 100%;
+	margin: 0 auto;
+	}
 
 .row {
-  display: flex;
-}
+	display: flex;
+	}
 
 .center {
-  text-align: center;
-}
+	text-align: center;
+	}
 
 .centerContent {
-  margin-left: auto;
-  margin-right: auto;
-}
+	margin-left: auto;
+	margin-right: auto;
+	}
 
 /* The navigation bar */
 .navbar-custom {
-  width: 100%;
-   background-color: rgba(0,0,0,1);
-   list-style: none;
-   margin: 0;
-   padding: 0;
-   top: 0;
-   text-align: center;
-   position: fixed;
-   z-index: 1;
-   top: 0;
-}
+	width: 100%;
+	background-color: rgba(0,0,0,1);
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	top: 0;
+	text-align: center;
+	position: fixed;
+	z-index: 1;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	}
 
 .navbar-custom li {
   display: inline;
-}
+	}
 
 /* Links inside the navbar */
 .link-item {
-  text-decoration: none;
-  display: inline-block;
-  font-size: 1.5em;
-  margin-bottom: 5px;
-  padding: 0 2%;
-}
+	text-decoration: none;
+	display: inline-block;
+	font-size: 0.8em;
+	margin-bottom: 5px;
+	padding: 0 2%;
+	}
 
 .list-item {
   padding: 0.1%;
-}
+	}
 
 .list-item a {
-  text-decoration: none;
-}
+	text-decoration: none;
+	}
+	
 /*T9A ico*/
 .list-item:first-child a {
   padding: 0;
-}
+	}
+	
 .list-item:first-child:hover {
   background: none !important;
-}
+	}
+	
 .list-item:first-child a img {
 	margin: -15px 0 0 0;
-}
+	}
 
 #seal {
   display:none;
-}
+	}
 
 /* Header */
 .headerContainer {
   position: relative;
   top: 4%;
   left: 0;
-  margin-bottom: 2%;
-}
+  margin-bottom: 6%;
+	}
+
+#headerlogo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  max-width: 300px;
+  width: 100%;
+	}
 
 #headerimg {
   width: 100%;
@@ -128,18 +143,7 @@ h4 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-#headerlogo {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  max-width: 300px;
-  width: 100%;
-}
+	}
 
 .blackBarTop::before {
   content: "";
@@ -148,7 +152,7 @@ h4 {
   background-image: url("img/black_texture_flip.png");
   background-repeat: repeat-x;
   background-position: top;
-}
+	}
 
 .blackBarBottom::after {
   content: "";
@@ -158,29 +162,28 @@ h4 {
   background-image: url("img/black_texture.png");
   background-repeat: repeat-x;
   background-position: bottom;
-}
-
+	}
 
 /* Introduction */
 #flexContainer {
   display: box;
-}
+	}
 
 #forum {
   margin-top: 3.3%;
   order: 2;
   width: 50%;
-}
+	}
 
 #introductionText {
   order: 1;
-}
+	}
 
 #rules {
   margin-top: 3.3%;
   order: 3;
   width: 50%;
-}
+	}
 
 /* Parallax image */
 #miniatures {
@@ -189,7 +192,7 @@ h4 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
+	}
 
 #worldmap {
   background-image: url("img/worldMap.png");
@@ -197,59 +200,59 @@ h4 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
+	}
 .container-fluid{
 	padding: 0;
-}
+	}
 
 /* The Scroll */
 #thescroll {
   text-align: center;
-}
+	}
 
 #thescroll .paragraph{
   text-align: justify;
-}
+	}
 
 #scrollIcon {
   margin: 2% 0 2% 0;
-}
+	}
 
 .conte {
     width: 80%;
     overflow: auto;
-}
+	}
 
 #mostRecentScroll {
   float: right;
   width: 80%;
   margin: 5% 0 5% 0;
-}
+	}
 
 .scrollItem img {
   display: none;
-}
+	}
 
 #scrollArchive {
   margin-top: 50%;
-}
+	}
 
 /* Armies */
 #theworld {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-}
+	}
 
 #worldIcon {
   margin-bottom: 2.5%;
   margin-top: 2.5%;
-}
+	}
 
 .armies {
   text-align: center;
     margin-top: 2%;
-}
+	}
 
 .armyContainer {
   display: inline-block;
@@ -258,8 +261,7 @@ h4 {
   float: left;
   overflow: auto;
   padding: 1%;
-
-}
+	}
 
 .armyImage {
   /* opacity: 0.7;
@@ -272,8 +274,7 @@ h4 {
   height: auto;
   color: white;
   float: left;
-}
-
+	}
 
 .middle {
   display: block;
@@ -283,96 +284,56 @@ h4 {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
-}
+	}
 
 .middle img {
   /* display: none; */
   width: 30%;
-}
+	}
 
 .armyText {
   font-size: 1.5em;
-}
+	}
 
 }/*--- @media all---*/
 
 /*------- =======2======= ---------*/
 @media screen and (min-width:481px) {
 /* less MEDIUM (landscape mobile) */
-body {
-  background-color: black;
-}
 
 /* Introduction */
-
-#introduction {
-
-}
-
 #flexContainer {
   display: flex;
   width: 100%;
-}
+	}
 
 .col-sm {
   display: inline;
-}
-
-#forum {
-  margin-top: 3.3%;
-  order: 2;
-  width: 50%;
-}
+	}
 
 #introductionText {
-  order: 1;
   width: 100%;
-}
+	}
 
 #rules {
   margin-top: 3.3%;
   order: 3;
   width: 50%;
-}
-
-/* The navigation bar */
-.navbar-custom {
-  width: 100%;
-   background-color: rgba(0,0,0,1);
-   list-style: none;
-   margin: 0;
-   padding: 0;
-   top: 0;
-   text-align: center;
-   position: fixed;
-   z-index: 1;
-   top: 0;
-}
-
-.navbar-custom li {
-  display: inline;
-}
+	}
 
 /* Links inside the navbar */
 .link-item {
-  text-decoration: none;
-  display: inline-block;
-  font-size: 1.5em;
   margin-bottom: 0px;
   padding: 1%;
 }
 
 .list-item {
   padding: 2%;
-}
-
-.list-item a {
-  text-decoration: none;
-}
+	}
 
 #seal {
   display: inline-block;
-}
+	}
 
 }/*--- @media 481px---*/
 
@@ -381,374 +342,190 @@ body {
 /*------- =======3======= ---------*/
 @media screen and (min-width:641px) {
 /* MEDIUM (landscape mobile & tablet) */
-body {
-  background-color: black;
-}
 
 /* Introduction */
-#flexContainer {
-  display: flex;
-}
-
-#forum {
-  margin-top: 3.3%;
-  order: 2;
-  width: 50%;
-}
-
 #introductionText {
-  order: 1;
-  width: 100%;
   clear: both;
-}
+	}
 
 #rules {
   margin-top: 3.3%;
   order: 3;
   width: 50%;
-}
+	}
 
 /* The Scroll */
-#thescroll {
-  text-align: center;
-}
-
-#thescroll .paragraph {
-  text-align: justify;
-}
-
-#scrollIcon {
-  margin: 2% 0 2% 0;
-}
-
 .conte {
     width: 100%;
-    overflow: auto;
-}
+	}
 
 #mostRecentScroll {
   float: left;
   width: 63%;
   margin: 0% 0.5% 5% 0;
-}
+	}
 
 .scrollItem img {
-  padding: 0;
   padding: 0 1% 1.3% 0;
   margin: 0;
   width: 16%;
   display: inline-block;
-}
-
-#scrollArchive {
-  margin-top: 50%;
-}
+	}
 
 #archives {
   text-align: right;
-}
+	}
 
 }/*--- @media 641---*/
 
 /*------- =======4======= ---------*/
 @media screen and (min-width:991px) {
 /* LARGE (landscape tablet & small desktop screen) */
-body {
-  background-color: black;
-  color: white;
-  font-family: 'Crimson Text', regular;
-}
-
-body, html {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-
-}
-
-a {
-  color: #FFC85A;
-  text-decoration: none;
-}
 
 h4 {
   margin-bottom: 2%;
-}
+	}
 
 a:hover {
   transition: color 0.5s;
   color: #e15103;
   text-decoration: none;
-}
-
-.title {
-  font-size: 1.6em;
-  text-align: center;
-}
-
-.paragraph {
-    color: #AAAAAA;
-    font-size: 1.3em;
-    text-align: justify;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.row {
-  display: flex;
-}
-
-.center {
-  text-align: center;
-}
-
-.centerContent {
-  margin-left: auto;
-  margin-right: auto;
-}
-
+	}
 /* The navigation bar */
 .navbar-custom {
-  width: 100%;
   background-color: rgba(15,15,15,0.8);
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-}
+	}
 
 .navbar-custom li {
   display: inline-block;
   padding: 0;
   margin: 0;
 
-}
+	}
 
 /* Links inside the navbar */
 .link-item {
-  text-decoration: none;
-  display: inline-block;
-  font-size: 1.7em;
   margin: 0;
   padding: 0;
-}
-
-.list-item {
-
-}
+	}
 
 .list-item:hover {
   background-color: #000;
-}
+	}
 
 
 /* Header */
 .headerContainer {
-  position: relative;
   top: 0;
-  left: 0;
-}
+	}
 
 #headerimg {
-  width: 100%;
   height: 40%;
-  top: 0;
-  left: 0;
-  background-image: url("img/header.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.blackBarTop::before {
-  content: "";
-  display: block;
-  height: 20px;
-  background-image: url("img/black_texture_flip.png");
-  background-repeat: repeat-x;
-  background-position: top;
-}
-
-.blackBarBottom::after {
-  content: "";
-  display: block;
-  height: 100%;
-  margin-top: -20px;
-  background-image: url("img/black_texture.png");
-  background-repeat: repeat-x;
-  background-position: bottom;
-}
+	}
 
 #headerlogo {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
   max-width: 720px;
-  width: 100%;
-}
+	}
 
 /* Introduction */
-.columns {
-}
-
-#forum {
-  margin-top: 3.3%;
-  order: 2;
-  width: 50%;
-}
-
-#introductionText {
-  order: 1;
-  width: 100%;
-
-}
 
 #rules {
   margin-top: 3.3%;
   order: 3;
   width: 50%;
-}
+	}
 
 /* Parallax image */
 #miniatures {
-  background-image: url("img/miniatures.jpg");
   height: 60%;
   background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+	}
 
 #worldmap {
-  background-image: url("img/worldMap.png");
   height: 60%;
   background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+	}
 
 /* The Scroll */
 #thescroll {
   margin: 0 auto;
   padding: 0;
-  text-align: center;
   width: 80%;
   overflow: auto;
-
-}
-
-#scrollIcon {
-  margin: 2% 0 2% 0;
-}
+	}
 
 .conte {
   margin: auto;
-}
+	}
 
 #mostRecentScroll {
   padding: 0;
   margin: 0;
   margin-right: 3%;
   width: 30%;
-  float: left;
-}
+	}
 
 .scrollItem img {
-  padding: 0;
   padding: 0 1% 1% 0;
-  margin: 0;
   width: 15%;
-  display: inline-block;
-}
+	}
 
 
 #archives {
-  text-align: right;
   margin-right: 13%;
-}
+	}
 
 /* Armies */
 #theworld {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
   width: 80%;
-
-}
+	}
 
 #theWorldText {
   text-align: center;
   width: 60%;
   margin-left: auto;
   margin-right: auto;
-}
-
-#worldIcon {
-  margin-bottom: 2.5%;
-}
+	}
 
 .armies {
   width: 60%;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
-}
+	}
 
 .armyContainer {
-  display: inline-block;
-  position: relative;
   width: 25%;
-  overflow: auto;
   margin: auto;
-}
+	}
 
 .armyImage {
   opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
   transition: 0.5s ease;
   backface-visibility: hidden;
   background:rgba(0,0,0,0.6);
-}
+	}
 
 .middle {
-  display: block;
-  position: absolute;
   opacity: 0;
   transition: .5s ease;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
+	}
 
 .armyContainer:hover .armyImage {
   opacity: 0.3;
-}
+	}
 
 .armyImage::after {
   opacity: 0.9;
-}
+	}
 
 .armyContainer:hover .middle {
   opacity: 1;
-}
+	}
 
 .armyText {
   color: #FFC85A;
   font-size: 1.2em;
-}
+	}
 
 .list-item a {
 	padding: 5px 10px;
@@ -759,42 +536,41 @@ a:hover {
 /*------- =======5======= ---------*/
 @media screen and (min-width:1200px) {
 /* XLARGE (desktop screen ) */
-body {
-  background: black;
-}
 
 /* Introduction */
 .columns {
 width: 100%;
-}
-
+	}
+	
 #forum {
-  margin-top: 3.3%;
   order: 1;
   width: 25%;
-}
-
+	}
+	
 #introductionText {
   order: 2;
   width: 50%;
-}
-
+	}
+	
 #rules {
   margin-top: 3.3%;
   order: 3;
   width: 25%;
-}
+	}
+	
+.link-item {
+	font-size: 0.9em;
+	}
+	
 .list-item a {
 	padding: 10px 15px;
 	}
+
 } /*--- @media 1200---*/
 
 
 /*------- =======6======= ---------*/
 @media screen and (min-width:1441px) {
-  body {
-    background-color: black;
-  }
 
 /* XXLARGE (large desktop screen) */
 }/*--- @media 1441---*/
@@ -802,300 +578,51 @@ width: 100%;
 /*------- =======7======= ---------*/
 @media screen and (min-width:1681px) {
 /* more XXLARGE (ultra large desktop screen).  */
-body {
-  background-color: black;
-  color: white;
-  font-family: 'Crimson Text', regular;
-}
-
-body, html {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-
-}
-
-a {
-  color: #FFC85A;
-  text-decoration: none;
-}
-
-h4 {
-  margin-bottom: 2%;
-}
-
-.title {
-  font-size: 1.6em;
-  text-align: center;
-}
-
-.paragraph {
-    color: #AAAAAA;
-    font-size: 1.3em;
-    text-align: justify;
-    /* width: 100%; */
-    margin: 0 auto;
-}
-
-.row {
-  display: flex;
-}
-
-.center {
-  text-align: center;
-}
-
-.centerContent {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* The navigation bar */
-.navbar-custom {
-  width: 100%;
-  background-color: rgba(15,15,15,0.5);
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-}
-
-.navbar-custom li {
-  display: inline-block;
-  padding: 0;
-}
-
-/* Links inside the navbar */
-.link-item {
-  text-decoration: none;
-  display: inline-block;
-  font-size: 1.7em;
-  margin: 0;
-  padding: 0;
-}
-
-.list-item {
-  padding-left: 2%;
-}
-
-.list-item:hover {
-  background-color: rgba(16, 16, 16, 0.5);
-}
 
 /* Header */
-.headerContainer {
-  position: relative;
-  top: 0;
-  left: 0;
-}
-
 #headerimg {
-  width: 100%;
   height: 80%;
-  top: 0;
-  left: 0;
-  background-image: url("img/header.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.blackBarTop::before {
-  content: "";
-  display: block;
-  height: 20px;
-  background-image: url("img/black_texture_flip.png");
-  background-repeat: repeat-x;
-  background-position: top;
-}
-
-.blackBarBottom::after {
-  content: "";
-  display: block;
-  height: 100%;
-  margin-top: -20px;
-  background-image: url("img/black_texture.png");
-  background-repeat: repeat-x;
-  background-position: bottom;
-}
-
-#headerlogo {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  max-width: 720px;
-  width: 100%;
-}
+	}
 
 /* Introduction */
 .columns {
   padding: 0;
   margin-bottom: 0;
-}
+	}
 
 #introduction {
   margin: auto;
   padding: 0;
   margin-top: 0;
   margin-bottom: 3%;
-}
-
-
-#forum {
-  margin-top: 3.3%;
-  order: 1;
-}
+	}
 
 #introductionText {
   order: 2;
   width: 50%;
   margin: auto;
-}
+	}
 
 #rules {
   margin-top: 3.3%;
   order: 3;
-}
+	}
 
-/* Parallax image */
-#miniatures {
-  background-image: url("img/miniatures.jpg");
-  height: 60%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#worldmap {
-  background-image: url("img/worldMap.png");
-  height: 60%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 /* The Scroll */
 #thescroll {
-  margin: 0 auto;
-  text-align: center;
   width: 80%;
-  overflow: auto;
-
-}
-
-#scrollIcon {
-  margin: 2% 0 2% 0;
-}
+	}
 
 .conte {
   margin: auto;
-}
-
-#mostRecentScroll {
-  padding: 0;
-  margin: 0;
-  margin-right: 3%;
-  width: 30%;
-  float: left;
-}
-
-.scrollItem img {
-  padding: 0;
-  padding: 0 1% 1% 0;
-  margin: 0;
-  width: 15%;
-  display: inline-block;
-}
-
+	}
 
 #archives {
-  text-align: right;
   width: 100%;
   padding-right: 3%;
   font-size: 1.5em;
-}
+	}
 
-/* Armies */
-#theworld {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-}
-
-#theWorldText {
-  text-align: center;
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#worldIcon {
-  margin-bottom: 2.5%;
-}
-
-.armies {
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-
-.armyContainer {
-  display: inline-block;
-  position: relative;
-  width: 25%;
-  overflow: auto;
-  margin: auto;
-}
-
-.armyImage {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: 0.5s ease;
-  backface-visibility: hidden;
-  background:rgba(0,0,0,0.6);
-}
-
-.middle {
-  display: block;
-  position: absolute;
-  opacity: 0;
-  transition: .5s ease;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.armyContainer:hover .armyImage {
-  opacity: 0.3;
-}
-
-.armyImage::after {
-  opacity: 0.9;
-}
-
-.armyContainer:hover .middle {
-  opacity: 1;
-}
-
-.armyText {
-  color: #FFC85A;
-  font-size: 1.2em;
-}
 
 }/*--- @media 1681---*/
