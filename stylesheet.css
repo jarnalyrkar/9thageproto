@@ -34,6 +34,7 @@ h2 {
   margin-bottom: 2%;
   margin-top: 4%;
   letter-spacing: 0.1em;
+  word-spacing: 0.2em;
 	}
 
 .title {
@@ -42,7 +43,7 @@ h2 {
 	}
 
 .paragraph {
-	color: #999;
+	color: #5b5b5b;
 	font-size: 1.3em;
 	text-align: justify;
 	width: 100%;
