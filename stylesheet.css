@@ -303,12 +303,6 @@ h2 {
   width: 100%;
 	}
 
-#rules {
-  margin-top: 3.3%;
-  order: 3;
-  width: 50%;
-	}
-
 /* Links inside the navbar */
 .link-item {
   margin-bottom: 0px;
@@ -334,12 +328,6 @@ h2 {
 /* Introduction */
 #introductionText {
   clear: both;
-	}
-
-#rules {
-  margin-top: 3.3%;
-  order: 3;
-  width: 50%;
 	}
 
 /* The Scroll */
@@ -427,11 +415,6 @@ a:hover {
 #introductionText{
 	margin: 0 15%;
 }
-#rules {
-  margin-top: 3.3%;
-  order: 3;
-  width: 50%;
-	}
 
 /* Parallax image */
 #miniatures {
@@ -452,10 +435,6 @@ a:hover {
   overflow: auto;
 	}
 
-.conte {
-  margin: auto;
-	}
-
 #mostRecentScroll {
   padding: 0;
   margin: 0;
@@ -467,7 +446,6 @@ a:hover {
   padding: 0 1% 1% 0;
   width: 15%;
 	}
-
 
 #archives {
   margin-right: 13%;
@@ -563,8 +541,6 @@ width: 100%;
 	}
 	
 #rules {
-  margin-top: 3.3%;
-  order: 3;
   width: 25%;
 	}
 	
@@ -581,13 +557,7 @@ width: 100%;
 
 /*------- =======6======= ---------*/
 @media screen and (min-width:1441px) {
-
 /* XXLARGE (large desktop screen) */
-}/*--- @media 1441---*/
-
-/*------- =======7======= ---------*/
-@media screen and (min-width:1681px) {
-/* more XXLARGE (ultra large desktop screen).  */
 
 /* Introduction */
 .columns {
@@ -595,39 +565,17 @@ width: 100%;
   margin-bottom: 0;
 	}
 
-#introduction {
-  margin: auto;
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 3%;
-	}
-
-#introductionText {
-  order: 2;
-  width: 50%;
-  margin: auto;
-	}
-
-#rules {
-  margin-top: 3.3%;
-  order: 3;
-	}
-
-
 /* The Scroll */
-#thescroll {
-  width: 80%;
-	}
-
-.conte {
-  margin: auto;
-	}
-
 #archives {
   width: 100%;
   padding-right: 3%;
   font-size: 1.5em;
 	}
+	
+}/*--- @media 1441---*/
 
+/*------- =======7======= ---------*/
+@media screen and (min-width:1681px) {
+/* more XXLARGE (ultra large desktop screen).  */
 
 }/*--- @media 1681---*/
