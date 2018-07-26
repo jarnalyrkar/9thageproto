@@ -68,7 +68,6 @@ h4 {
    text-align: center;
    position: fixed;
    z-index: 1;
-   top: 0;
 }
 
 .navbar-custom li {
@@ -100,9 +99,7 @@ h4 {
 /* Header */
 .headerContainer {
   position: relative;
-  top: 4%;
   left: 0;
-  margin-bottom: 6%;
 }
 
 #headerimg {
@@ -123,7 +120,7 @@ h4 {
   top: 0;
   right: 0;
   bottom: 0;
-  margin: auto;
+  margin: 0 auto;
   max-width: 300px;
   width: 100%;
 }
@@ -155,12 +152,15 @@ h4 {
 }
 
 /* Introduction */
+#introduction {
+  margin-top: 3%;
+}
 #flexContainer {
   display: box;
 }
 
 #forum {
-  margin-top: 3.3%;
+  /* margin-top: 3.3%; */
   width: 50%;
 }
 
@@ -168,7 +168,7 @@ h4 {
 }
 
 #rules {
-  margin-top: 3.3%;
+  /* margin-top: 3.3%; */
   width: 50%;
 }
 
@@ -296,77 +296,85 @@ a:hover {
 
 /* The navigation bar */
 .navbar-custom {
-   width: 100%;
-   background-color: rgba(15,15,15,0.5);
-   list-style: none;
-   margin: 0;
-   padding: 0;
-   text-align: center;
-   position: fixed;
-   z-index: 1;
-   top: 0;
+  width: 100%;
+  background-color: rgba(15,15,15,0.5);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  position: fixed;
+  z-index: 1;
+  top: 0;
 }
 
 .navbar-custom li {
   display: inline-block;
   padding: 0;
-  margin: 0.5%;
+  margin-left: 2%;
+  margin-bottom: 1%;
 }
 
 /* Links inside the navbar */
 .link-item {
   text-decoration: none;
   display: inline-block;
-  font-size: 1.5em;
-  margin: 0;
+  font-size: 1.7em;
+  margin: 0px;
   padding: 0;
 }
 
 .list-item {
-
+  padding-left: 2%;
 }
 
 .list-item:hover {
-  background-color: #444444;
+  background-color: rgba(16, 16, 16, 0.5);
 }
 
 #seal {
   margin-top: 15px;
-  margin-bottom:-15px;
+  margin-bottom:-7px;
 }
 
 /* Header */
 .headerContainer {
-  margin-top: 20px;
   position: relative;
-  color: white;
   text-align: center;
+  color: white;
 }
 
 #headerimg {
   /* image file is set in separate css
     files for each individual army */
-  width: 100%;
-  height: 70%;
-  top: 0;
-  left: 0;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    opacity: 1;
+    display: inline-block;
+    width: 100%;
+    height: 70%;
+    padding: 0;
+    margin: 0;
 }
 
-#headerlogo {
+main {
+  padding: 0;
+  margin: 0;
+}
+
+#headerText {
+  padding: 2%;
+  border: 2px solid white;
+  border-radius: 25px;
+  font-size: 3em;
+  background-color: rgba(16, 16, 16, 0.4);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-
 /* Introduction */
+
 #forum {
-  margin-top: 3.3%;
+  /* margin-top: 3.3%; */
   width: 100%;
 }
 
@@ -374,7 +382,7 @@ a:hover {
 }
 
 #rules {
-  margin-top: 3.3%;
+  /* margin-top: 3.3%; */
   width: 100%;
 }
 
