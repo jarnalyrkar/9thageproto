@@ -11,15 +11,8 @@
   <script type="text/javascript" src="JS/my_script.js"></script>
 </head>
 
-<body>
-  <header class="headerContainer">
-    <h1 alt="The Ninth Age Fantasy Battles">
-      <div id="headerimg" class="blackBarBottom" src="img/header.jpg"></div>
-      <img id="headerlogo" src="img/header_logo.png" alt="The 9th Age Fantasy Battle">
-    </h1>
-  </header>
-
-  <nav>
+<body> 
+	<nav>
 	  <ul class="navbar-custom">
 	    <li class="list-item"><a class="link-item" href="#ninthage">Downloads</a></li>
 	    <li class="list-item"><a class="link-item" href="#world">The World</a></li>
@@ -27,20 +20,27 @@
 	  </ul>
 	  <div id="top_logo"><a href="#"><img src="img/t9a_menu_logo.png" alt="9th Age fantasy battle_ logo"></a></div>
   </nav>
+  
+  <header class="headerContainer">
+    <h1 alt="The Ninth Age Fantasy Battles">
+      <div id="headerimg" class="blackBarBottom" src="img/header.jpg"></div>
+      <img id="headerlogo" src="img/header_logo.png" alt="The 9th Age Fantasy Battle">
+    </h1>
+  </header>
 
   <div class="container-fluid">
     <main class="main">
       <!-- Introduction -->
       <section id="introduction">
-        <div class="row" id="flexContainer">
+        <div class="row flexContainer">
 
-          <div class="columns" id="forum">
+          <div class="columns col1" id="forum">
             <div class="center">
               <a href="https://www.the-ninth-age.com/index.php?board-list/"><img id="forumimg" src="img/forum.png" alt="Forum"><p>FORUM</p></a>
             </div>
           </div>
 
-          <div class="columns" id="introductionText">
+          <div class="columns centralText col2" id="introductionText">
             <h2 class="title">A WARGAME BY GAMERS FOR GAMERS</h2>
             <p class="paragraph">
               The 9th age is a wargame that has lorem ipsum dolor sit amet, ea mei harum
@@ -51,7 +51,7 @@
             </p>
           </div>
 
-          <div class="columns" id="rules">
+          <div class="columns col3" id="rules">
             <div class="center">
               <a href="#"><img id="rulesimg" src="img/rules.png" alt="Download rules"><p>DOWNLOAD THE RULES</p></a>
             </div>
@@ -88,186 +88,196 @@
 
       <!-- The World-->
       <section id="theworld">
+        <div class="row flexContainer">
+	        
+	        <div class="columns col1">
+	        </div>
 
-        <div id="theWorldText">
-          <img id="worldIcon" src="img/cosmology.png" class="img-fluid">
-          <h2 class="title">The World</h2>
-          <p class="paragraph">
-            The World of 9th age has as of now 16 official factions, lorem ipsum dolor sit amet,
-            ea mei harum ornatus definitiones, vis timeam iffendit ex. Te sit unum facer offendit,
-            no solet soluta inciderint ius, no cibo definitiones has. Amet intellegat ne pro.
-            Everti alienum consulatu id duo Vel elitr sententiae efficiendi an, his ullum aliquam id.
-          </p>
-        </div>
+			<div class="columns col2 centralText">
+		        <div id="theWorldText">
+		          <img id="worldIcon" src="img/cosmology.png" class="img-fluid">
+		          <h2 class="title">The World</h2>
+		          <p class="paragraph">
+		            The World of 9th age has as of now 16 official factions, lorem ipsum dolor sit amet,
+		            ea mei harum ornatus definitiones, vis timeam iffendit ex. Te sit unum facer offendit,
+		            no solet soluta inciderint ius, no cibo definitiones has. Amet intellegat ne pro.
+		            Everti alienum consulatu id duo Vel elitr sententiae efficiendi an, his ullum aliquam id.
+		          </p>
+		        </div>
 
-        <div class="armies">
+		        <div class="armies">
+		
+			     <a href="armies/HbE.html" class="armyContainer">
+		           <div class="wrapper">
+		              <img src="img/armies/HbE.png" alt="Highborn Elves" class="armyImage img-fluid">
+		              <div class="middle">
+		                <img src="img/armies/HbE-icon.png" class="img-fluid">
+		                <div class="armyText">Highborn Elves</div>
+		              </div>
+		            </div>
+		          </a>
+		
+		          <a href="#" class="armyContainer">
+		            <div class="wrapper">
+		              <img src="img/armies/DE.png" alt="Dread Elves" class="armyImage img-fluid">
+		              <div class="middle">
+		                <img src="img/armies/DE-icon.png" class="img-fluid">
+		                <div class="armyText">Dread Elves</div>
+		              </div>
+		            </div>
+		          </a>
+		
+		          <a href="#" class="armyContainer">
+		            <div class="wrapper">
+		              <img src="img/armies/SE.png" alt="Sylvan Elves" class="armyImage img-fluid">
+		              <div class="middle">
+		                <img src="img/armies/SE-icon.png" class="img-fluid">
+		                <div class="armyText">Sylvan Elves</div>
+		              </div>
+		            </div>
+		          </a>
+		
+		          <a href="#" class="armyContainer">
+		            <div class="wrapper">
+		              <img src="img/armies/SA.png" alt="Saurian Ancients" class="armyImage img-fluid">
+		              <div class="middle">
+		                <img src="img/armies/SA-icon.png" class="img-fluid">
+		                <div class="armyText">Saurian Ancients</div>
+		              </div>
+		            </div>
+		          </a>
+		
+		          <!-- Row 2 -->
+		          <a href="#" class="armyContainer">
+		            <div class="wrapper">
+		              <img src="img/armies/KoE.png" alt="Kingdom of Equitaine" class="armyImage">
+		              <div class="middle">
+		                <img src="img/armies/KoE-icon.png">
+		                <div class="armyText">Kingdom of Equitaine</div>
+		              </div>
+		            </div>
+		          </a>
+		
+		          <a href="#" class="armyContainer">
+		            <div class="wrapper">
+		              <img src="img/armies/EoS.png" alt="Empire of Sonnstahl" class="armyImage">
+		              <div class="middle">
+		                <img src="img/armies/EoS-icon.png">
+		                <div class="armyText">Empire of Sonnstahl</div>
+		              </div>
+		            </div>
+		          </a>
+		
+		          <a href="#" class="armyContainer">
+		            <div class="wrapper">
+		              <img src="img/armies/VC.png" alt="Vampire Covenant" class="armyImage">
+		              <div class="middle">
+		                <img src="img/armies/VC-icon.png">
+		                <div class="armyText">Vampire Covenant</div>
+		              </div>
+		            </div>
+		          </a>
+		
+		          <a href="#" class="armyContainer">
+		            <div class="wrapper">
+		              <img src="img/armies/UD.png" alt="Undying Dynasties" class="armyImage">
+		              <div class="middle">
+		                <img src="img/armies/UD-icon.png">
+		                <div class="armyText">Undying Dynasties</div>
+		              </div>
+		            </div>
+		          </a>
+		
+		
+		          <!-- Row 3 -->
+		          <a href="#" class="armyContainer">
+		            <div class="wrapper">
+		              <img src="img/armies/DH.png" alt="Dwarven Holds" class="armyImage">
+		              <div class="middle">
+		                <img src="img/armies/DH-icon.png">
+		                <div class="armyText">Dwarven Holds</div>
+		              </div>
+		            </div>
+		          </a>
+		
+		          <a href="#" class="armyContainer">
+		            <div class="wrapper">
+		              <img src="img/armies/ID.png" alt="Infernal Dwarves" class="armyImage">
+		              <div class="middle">
+		                <img src="img/armies/ID-icon.png">
+		                <div class="armyText">Infernal Dwarves</div>
+		              </div>
+		            </div>
+		          </a>
+		
+		          <a href="#" class="armyContainer">
+		            <div class="wrapper">
+		              <img src="img/armies/OK.png" alt="Ogre Khans" class="armyImage">
+		              <div class="middle">
+		                <img src="img/armies/OK-icon.png">
+		                <div class="armyText">Ogre Khans</div>
+		              </div>
+		            </div>
+		          </a>
+		
+		          <a href="#" class="armyContainer">
+		            <div class="wrapper">
+		              <img src="img/armies/OnG.png" alt="Orcs and Goblins" class="armyImage">
+		              <div class="middle">
+		                <img src="img/armies/OnG-icon.png">
+		                <div class="armyText">Orcs and Goblins</div>
+		              </div>
+		            </div>
+		          </a>
+		
+		          <!-- Row 4 -->
+		          <a href="#" class="armyContainer">
+		            <div class="wrapper">
+		              <img src="img/armies/WDG.png" alt="Warriors of the Dark Gods" class="armyImage">
+		              <div class="middle">
+		                <img src="img/armies/WDG-icon.png">
+		                <div class="armyText">Warriors of the Dark Gods</div>
+		              </div>
+		            </div>
+		          </a>
+		
+		          <a href="#" class="armyContainer">
+		            <div class="wrapper">
+		              <img src="img/armies/DL.png" alt="Daemon Legions" class="armyImage">
+		              <div class="middle">
+		                <img src="img/armies/DL-icon.png">
+		                <div class="armyText">Daemon Legions</div>
+		              </div>
+		            </div>
+		          </a>
+		
+		          <a href="#" class="armyContainer">
+		            <div class="wrapper">
+		              <img src="img/armies/BH.png" alt="Beast Herds" class="armyImage">
+		              <div class="middle">
+		                <img src="img/armies/BH-icon.png">
+		                <div class="armyText">Beast Herds</div>
+		              </div>
+		            </div>
+		          </a>
+		
+		          <a href="#" class="armyContainer">
+		            <div class="wrapper">
+		              <img src="img/armies/VS.png" alt="Vermin Swarm" class="armyImage">
+		              <div class="middle">
+		                <img src="img/armies/VS-icon.png">
+		                <div class="armyText">Vermin Swarm</div>
+		              </div>
+		            </div>
+		          </a>
 
-          <a href="armies/HbE.html">
-            <div class="armyContainer">
-              <img src="img/armies/HbE.png" alt="Highborn Elves" class="armyImage img-fluid">
-              <div class="middle">
-                <img src="img/armies/HbE-icon.png" class="img-fluid">
-                <div class="armyText">Highborn Elves</div>
-              </div>
-            </div>
-          </a>
-
-          <a href="#">
-            <div class="armyContainer">
-              <img src="img/armies/DE.png" alt="Dread Elves" class="armyImage img-fluid">
-              <div class="middle">
-                <img src="img/armies/DE-icon.png" class="img-fluid">
-                <div class="armyText">Dread Elves</div>
-              </div>
-            </div>
-          </a>
-
-          <a href="#">
-            <div class="armyContainer">
-              <img src="img/armies/SE.png" alt="Sylvan Elves" class="armyImage img-fluid">
-              <div class="middle">
-                <img src="img/armies/SE-icon.png" class="img-fluid">
-                <div class="armyText">Sylvan Elves</div>
-              </div>
-            </div>
-          </a>
-
-          <a href="#">
-            <div class="armyContainer">
-              <img src="img/armies/SA.png" alt="Saurian Ancients" class="armyImage img-fluid">
-              <div class="middle">
-                <img src="img/armies/SA-icon.png" class="img-fluid">
-                <div class="armyText">Saurian Ancients</div>
-              </div>
-            </div>
-          </a>
-
-          <!-- Row 2 -->
-          <a href="#">
-            <div class="armyContainer">
-              <img src="img/armies/KoE.png" alt="Kingdom of Equitaine" class="armyImage">
-              <div class="middle">
-                <img src="img/armies/KoE-icon.png">
-                <div class="armyText">Kingdom of Equitaine</div>
-              </div>
-            </div>
-          </a>
-
-          <a href="#">
-            <div class="armyContainer">
-              <img src="img/armies/EoS.png" alt="Empire of Sonnstahl" class="armyImage">
-              <div class="middle">
-                <img src="img/armies/EoS-icon.png">
-                <div class="armyText">Empire of Sonnstahl</div>
-              </div>
-            </div>
-          </a>
-
-          <a href="#">
-            <div class="armyContainer">
-              <img src="img/armies/VC.png" alt="Vampire Covenant" class="armyImage">
-              <div class="middle">
-                <img src="img/armies/VC-icon.png">
-                <div class="armyText">Vampire Covenant</div>
-              </div>
-            </div>
-          </a>
-
-          <a href="#">
-            <div class="armyContainer">
-              <img src="img/armies/UD.png" alt="Undying Dynasties" class="armyImage">
-              <div class="middle">
-                <img src="img/armies/UD-icon.png">
-                <div class="armyText">Undying Dynasties</div>
-              </div>
-            </div>
-          </a>
-
-
-          <!-- Row 3 -->
-          <a href="#">
-            <div class="armyContainer">
-              <img src="img/armies/DH.png" alt="Dwarven Holds" class="armyImage">
-              <div class="middle">
-                <img src="img/armies/DH-icon.png">
-                <div class="armyText">Dwarven Holds</div>
-              </div>
-            </div>
-          </a>
-
-          <a href="#">
-            <div class="armyContainer">
-              <img src="img/armies/ID.png" alt="Infernal Dwarves" class="armyImage">
-              <div class="middle">
-                <img src="img/armies/ID-icon.png">
-                <div class="armyText">Infernal Dwarves</div>
-              </div>
-            </div>
-          </a>
-
-          <a href="#">
-            <div class="armyContainer">
-              <img src="img/armies/OK.png" alt="Ogre Khans" class="armyImage">
-              <div class="middle">
-                <img src="img/armies/OK-icon.png">
-                <div class="armyText">Ogre Khans</div>
-              </div>
-            </div>
-          </a>
-
-          <a href="#">
-            <div class="armyContainer">
-              <img src="img/armies/OnG.png" alt="Orcs and Goblins" class="armyImage">
-              <div class="middle">
-                <img src="img/armies/OnG-icon.png">
-                <div class="armyText">Orcs and Goblins</div>
-              </div>
-            </div>
-          </a>
-
-          <!-- Row 4 -->
-          <a href="#">
-            <div class="armyContainer">
-              <img src="img/armies/WDG.png" alt="Warriors of the Dark Gods" class="armyImage">
-              <div class="middle">
-                <img src="img/armies/WDG-icon.png">
-                <div class="armyText">Warriors of the Dark Gods</div>
-              </div>
-            </div>
-          </a>
-
-          <a href="#">
-            <div class="armyContainer">
-              <img src="img/armies/DL.png" alt="Daemon Legions" class="armyImage">
-              <div class="middle">
-                <img src="img/armies/DL-icon.png">
-                <div class="armyText">Daemon Legions</div>
-              </div>
-            </div>
-          </a>
-
-          <a href="#">
-            <div class="armyContainer">
-              <img src="img/armies/BH.png" alt="Beast Herds" class="armyImage">
-              <div class="middle">
-                <img src="img/armies/BH-icon.png">
-                <div class="armyText">Beast Herds</div>
-              </div>
-            </div>
-          </a>
-
-          <a href="#">
-            <div class="armyContainer">
-              <img src="img/armies/VS.png" alt="Vermin Swarm" class="armyImage">
-              <div class="middle">
-                <img src="img/armies/VS-icon.png">
-                <div class="armyText">Vermin Swarm</div>
-              </div>
-            </div>
-          </a>
-
-        </div>
-
+        		</div><!--armies-->
+			</div><!--column-->
+			
+			<div class="columns col3">
+	        </div>
+	        
+        </div><!--flexcontainer-->
       </section>
     </div>
     </main>

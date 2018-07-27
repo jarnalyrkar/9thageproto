@@ -1,4 +1,4 @@
-/*-- CSS modified by CASP for design aspect. WIP  --*/
+/*-- CSS modified by CASP WIP  --*/
 
 @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:500|Montserrat:400');
 
@@ -13,23 +13,22 @@ body {
   font-family: 'Cormorant Garamond', serif;
   font-weight: 500;
 	}
-
 body, html {
   height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
 	}
-
+section{
+		padding: 0 0 30px 0;
+	}
 a {
   color: #FFC85A;
 	}
-
 a:hover {
   color: #e15103;
   text-decoration: none;
 	}
-
 h2 {
   margin-bottom: 2%;
   margin-top: 4%;
@@ -37,29 +36,25 @@ h2 {
   word-spacing: 0.17em;
   text-transform: uppercase;
 	}
-
 .title {
   font-size: 1.6em;
   text-align: center;
 	}
-
 .paragraph {
 	color: #7F7F7F;
-	font-size: 1.3em;
-	text-align: justify;
+	font-size: 1.1em;
+	text-align: left;
 	width: 100%;
 	margin: 0 auto 30px auto;
-	line-height: 1.2em;
+	line-height: 1em;
 	}
-
 .row {
 	display: flex;
+	margin: 0;
 	}
-
 .center {
 	text-align: center;
 	}
-
 .centerContent {
 	margin-left: auto;
 	margin-right: auto;
@@ -80,11 +75,9 @@ h2 {
 	font-weight: 400;
 	text-transform: uppercase;
 	}
-
 .navbar-custom li {
   display: inline;
 	}
-	
 #top_logo{
 	display: none;
 	}
@@ -97,11 +90,9 @@ h2 {
 	margin-bottom: 5px;
 	padding: 0 2%;
 	}
-
 .list-item {
   padding: 0.1%;
 	}
-
 .list-item a {
 	text-decoration: none;
 	}
@@ -109,11 +100,10 @@ h2 {
 /* Header */
 .headerContainer {
   position: relative;
-  top: 4%;
+  top: 0;
   left: 0;
   margin-bottom: 6%;
 	}
-
 #headerlogo {
   position: absolute;
   left: 0;
@@ -123,7 +113,6 @@ h2 {
   margin: auto;
   width: 290px;
 	}
-
 #headerimg {
 	width: 100%;
 	height: 75%;
@@ -132,14 +121,12 @@ h2 {
 	background: url("img/header.jpg") no-repeat center fixed; 
 	background-size: cover;
 	}
-
 .blackBarTop::before {
 	content: "";
 	display: block;
 	height: 20px;
 	background: url("img/black_texture_flip.png") repeat-x top;
 	}
-
 .blackBarBottom::after {
 	content: "";
 	display: block;
@@ -149,21 +136,21 @@ h2 {
 	}
 
 /* Introduction */
-#flexContainer {
+.flexContainer {
 	display: box;
 	}
-
-#forum {
+.col1 {
   margin-top: 3.3%;
   order: 2;
   width: 50%;
 	}
-
-#introductionText {
+.col2{
   order: 1;
 	}
-
-#rules {
+.centralText{
+	margin: 0 8%;
+	}
+.col3 {
   margin-top: 3.3%;
   order: 3;
   width: 50%;
@@ -177,7 +164,6 @@ h2 {
   background-repeat: no-repeat;
   background-size: cover;
 	}
-
 #worldmap {
   background-image: url("img/worldMap.png");
   height: 30%;
@@ -193,51 +179,33 @@ h2 {
 #thescroll {
   text-align: center;
 	}
-
-#thescroll .paragraph{
-  text-align: justify;
-	}
-
 #scrollIcon {
   margin: 2% 0 2% 0;
 	}
-
 .conte {
     width: 80%;
     overflow: auto;
 	}
-
 #mostRecentScroll {
   float: right;
   width: 80%;
   margin: 5% 0 5% 0;
 	}
-
 .scrollItem img {
   display: none;
 	}
-
 #scrollArchive {
   margin-top: 50%;
 	}
 
 /* Armies */
 #theworld {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-	}
-
+  text-align: center;	
+  }
 #worldIcon {
   margin-bottom: 2.5%;
   margin-top: 2.5%;
 	}
-
-.armies {
-  text-align: center;
-    margin-top: 2%;
-	}
-
 .armyContainer {
   display: inline-block;
   position: relative;
@@ -246,37 +214,36 @@ h2 {
   overflow: auto;
   padding: 1%;
 	}
-
 .armyImage {
-  /* opacity: 0.7;
-  width: 50%;
-  float: left;
-  margin-top: 1%; */
-  opacity: 0.6;
+  opacity: 1;
   display: block;
   width: 100%;
   height: auto;
   color: white;
   float: left;
 	}
-
+.wrapper{
+  position: relative;	
+  display: inline-block;
+	}
 .middle {
   display: block;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   text-align: center;
+  background-color: rgba(15,15,15,0.7);
+  padding: 3% 15%;
+  width: 100%;
+  bottom:0px;
+  min-height: 30%;
 	}
 
 .middle img {
-  /* display: none; */
-  width: 30%;
+  display: none;
 	}
 
 .armyText {
-  font-size: 1.5em;
+  font-size: 1.2em;
+  line-height: 0.95em;
 	}
 
 }/*--- @media all---*/
@@ -288,9 +255,16 @@ h2 {
 #headerlogo{
 	width: 390px;
 }
+.paragraph {
+	text-align: justify;
+	}
 
+.centralText{
+	margin: 0 12%;
+	}
 /* Introduction */
-#flexContainer {
+	
+.flexContainer {
   display: flex;
   width: 100%;
 	}
@@ -298,11 +272,7 @@ h2 {
 .col-sm {
   display: inline;
 	}
-
-#introductionText {
-  width: 100%;
-	}
-
+	
 /* Links inside the navbar */
 .link-item {
   margin-bottom: 0px;
@@ -312,7 +282,13 @@ h2 {
 .list-item {
   padding: 2%;
 	}
-
+	
+/*army*/
+	
+.armyContainer {
+  width: 33%;
+	}
+	
 }/*--- @media 481px---*/
 
 
@@ -323,34 +299,67 @@ h2 {
 
 #headerlogo{
 	width: 490px;
-}
-
-/* Introduction */
-#introductionText {
-  clear: both;
+	}
+#top_logo{
+	position: fixed;
+	top: 15px;
+	left: 30px;
+	z-index: 99;
+	}	
+#top_logo img{
+	height: 25px;
+	}
+/* The navigation bar */
+.navbar-custom {
+  min-height: 55px;
+	}
+.navbar-custom li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+	}
+	
+.list-item a {
+	padding: 18px 15px;
+	}
+/* Links inside the navbar */
+.link-item {
+  margin: 0;
+  padding: 0;
+	}
+.list-item:hover {
+  background-color: #000;
 	}
 
+/* Introduction */
+.centralText{
+	margin: 0 16%;
+	}
+		
 /* The Scroll */
 .conte {
     width: 100%;
 	}
-
 #mostRecentScroll {
   float: left;
   width: 63%;
   margin: 0% 0.5% 5% 0;
 	}
-
 .scrollItem img {
   padding: 0 1% 1.3% 0;
   margin: 0;
   width: 16%;
   display: inline-block;
 	}
-
 #archives {
   text-align: right;
 	}
+	
+/*army*/	
+.armyContainer {
+  width: 25%;
+	}
+	
 
 }/*--- @media 641---*/
 
@@ -361,66 +370,30 @@ h2 {
 h2 {
   margin-bottom: 2%;
 	}
-
 a:hover {
   transition: color 0.5s;
-	}
-	
+	}	
 #headerlogo{
 	width: 590px;
 }
-/* The navigation bar */
-.navbar-custom {
-  min-height: 55px;
-	}
 
-.navbar-custom li {
-  display: inline-block;
-  padding: 0;
-  margin: 0;
-	}
-	
-#top_logo{
-	position: fixed;
-	top: 15px;
-	left: 30px;
-	z-index: 99;
-	}
-	
-#top_logo img{
-	height: 25px;
-	}
-	
-/* Links inside the navbar */
-.link-item {
-  margin: 0;
-  padding: 0;
-	}
-
-.list-item:hover {
-  background-color: #000;
-	}
 
 /* Header */
-.headerContainer {
-  top: 0;
-	}
-
 #headerlogo {
   max-width: 720px;
 	}
 
 /* Introduction */
-#introductionText{
-	margin: 0 15%;
-}
+.paragraph {
+	font-size: 1.3em;
+	line-height: 1.2em;
+	}
 
 /* Parallax image */
 #miniatures {
   height: 60%;
   background-attachment: fixed;
 	}
-
 #worldmap {
   height: 60%;
   background-attachment: fixed;
@@ -433,77 +406,59 @@ a:hover {
   width: 80%;
   overflow: auto;
 	}
-
 #mostRecentScroll {
   padding: 0;
   margin: 0;
   margin-right: 3%;
   width: 30%;
 	}
-
 .scrollItem img {
   padding: 0 1% 1% 0;
   width: 15%;
 	}
-
 #archives {
   margin-right: 13%;
 	}
 
 /* Armies */
-#theworld {
-  width: 80%;
-	}
 
 #theWorldText {
   text-align: center;
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
 	}
-
-.armies {
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
+.armies a:hover{
+	color: #FFC85A;
+}
+.armyText {
+	padding: 10px 0 0 0;
+  font-size: 1.2em;
+  line-height: 1em;
 	}
-
-.armyContainer {
-  width: 25%;
-  margin: auto;
-	}
-
 .armyImage {
-  opacity: 1;
   transition: 0.5s ease;
   backface-visibility: hidden;
   background:rgba(0,0,0,0.6);
 	}
-
 .middle {
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   opacity: 0;
   transition: .5s ease;
+  background-color: rgba(15,15,15,0);
 	}
-
+.middle img {
+	display: inline-block;
+	width: 50%;
+	}
 .armyContainer:hover .armyImage {
   opacity: 0.3;
 	}
-
 .armyImage::after {
   opacity: 0.9;
 	}
-
 .armyContainer:hover .middle {
   opacity: 1;
-	}
-
-.armyText {
-  color: #FFC85A;
-  font-size: 1.2em;
-	}
-
-.list-item a {
-	padding: 18px 15px;
 	}
 
 }/*--- @media 991---*/
@@ -515,38 +470,35 @@ a:hover {
 #top_logo img{
 	height: 36px;
 	}
-	
 #headerlogo{
 	width: 690px;
 }
 
 /* Introduction */
-#introductionText{
-	margin: 0 0 60px 0;
-}
 
 .columns {
 width: 100%;
 	}
-	
-#forum {
+#introductionText{
+	margin: 0 0 60px 0;
+	}
+.centralText{
+	margin: 0;
+	}
+.col1{
   order: 1;
   width: 25%;
 	}
-	
-#introductionText {
+.col2{
   order: 2;
   width: 50%;
 	}
-	
-#rules {
+.col3{
   width: 25%;
 	}
-	
 .link-item {
 	font-size: 0.9em;
-	}
-	
+	}	
 .list-item a {
 	padding: 23px 15px;
 	}
