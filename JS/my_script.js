@@ -5,7 +5,7 @@ $(document).ready(function(){
 //-----------------------------------XX--SCRIPT  menu--XX
 if (document.documentElement.clientWidth > 640){
 	$(window).scroll(function () {
-		if ($(this).scrollTop() > 270) {
+		if ($(this).scrollTop() > 300) {
 		$("#top_logo").fadeIn();
 		$(".navbar-custom").css( 'background-color','rgba(15,15,15,0.55)');
 		} else {
