@@ -68,7 +68,7 @@ h2 {
 /* The navigation bar */
 .navbar-custom {
 	width: 100%;
-	background-color: rgba(15,15,15,0.55);
+	background-color: rgba(15,15,15,0);
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -381,7 +381,6 @@ a:hover {
 	}
 	
 #top_logo{
-	display: block;
 	position: fixed;
 	top: 15px;
 	left: 30px;
