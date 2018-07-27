@@ -430,7 +430,7 @@ a:hover {
 }
 .armyText {
 	padding: 10px 0 0 0;
-  font-size: 1.2em;
+  font-size: 1.4em;
   line-height: 1em;
 	}
 .armyImage {
@@ -439,7 +439,7 @@ a:hover {
   background:rgba(0,0,0,0.6);
 	}
 .middle {
-  top: 40%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -449,7 +449,7 @@ a:hover {
 	}
 .middle img {
 	display: inline-block;
-	width: 50%;
+	height: 55px;
 	}
 .armyContainer:hover .armyImage {
   opacity: 0.3;
@@ -502,7 +502,18 @@ width: 100%;
 .list-item a {
 	padding: 23px 15px;
 	}
-
+	
+/* Armies */
+.middle {
+  top: 40%;
+	}
+.middle img {
+	height: 35px;
+	}
+.armyText {
+  font-size: 1.2em;
+	}
+	
 } /*--- @media 1200---*/
 
 
@@ -522,11 +533,27 @@ width: 100%;
   padding-right: 3%;
   font-size: 1.5em;
 	}
-	
+	/* Armies */
+.middle {
+  top: 45%;
+	}
+.middle img {
+	height: 45px;
+	}
+.armyText {
+  font-size: 1.3em;
+	}
+
 }/*--- @media 1441---*/
 
 /*------- =======7======= ---------*/
 @media screen and (min-width:1681px) {
 /* more XXLARGE (ultra large desktop screen).  */
-
+	/* Armies */
+.middle img {
+	height: 55px;
+	}
+.armyText {
+  font-size: 1.4em;
+	}
 }/*--- @media 1681---*/
