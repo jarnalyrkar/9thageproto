@@ -5,17 +5,16 @@ $(document).ready(function(){
 //-----------------------------------XX--SCRIPT  menu--XX
 if (document.documentElement.clientWidth > 640){
 	$(window).scroll(function () {
-		if ($(this).scrollTop() > 300) {
+		if ($(this).scrollTop() > 200) {
 		$("#top_logo").fadeIn();
-		//$(".navbar-custom").transition({ background-color: rgba(15,15,15,0.55) });
-		$(".navbar-custom").css( 'background-color','rgba(15,15,15,0.55)');
+		$(".navbar-custom").addClass("navbar-fade");
 		} else {
 		//$("#entete").removeClass("fix");
 		$("#top_logo").hide();
-		$(".navbar-custom").css( 'background-color','rgba(15,15,15,0)');
+		$(".navbar-custom").removeClass("navbar-fade");
 		}
 	}); 	
-	//Passe devant les i-frame aussi.
+	//front of i-frame.
 	$("iframe").each(function(){
 	    var ifr_source = $(this).attr('src');
 	    var wmode = "wmode=transparent";
