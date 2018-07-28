@@ -117,12 +117,14 @@ h2 {
 #headerlogo {
   position: absolute;
   left: 0;
-  top: 11%;
+  top: 14%;
   right: 0;
   margin: auto;
   width: 290px;
 	}
 #headerimg {
+	display: block;
+	position: relative;
 	height: 50%;
 	background: url("img/header.jpg") center 0 no-repeat fixed; 
    -webkit-background-size: cover;
@@ -398,7 +400,6 @@ a:hover {
 	}	
 #headerlogo{
 	width: 590px;
-	top: 8%;
 }
 
 
@@ -498,7 +499,6 @@ a:hover {
 	}
 #headerlogo{
 	width: 690px;
-	top: 7%;
 }
 
 /* Introduction */
