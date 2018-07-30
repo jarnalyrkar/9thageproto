@@ -1,0 +1,41 @@
+/*--- ========= ---*/
+@media only screen {
+/* SMALL all device */
+/* Global settings */
+#hbe-army{
+	background: url("../img/armies/HbE-header.png") center 0 no-repeat fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover; 
+}
+}/*--- @media all---*/
+
+/*------- =============== ---------*/
+@media screen and (min-width:481px) {
+/* less MEDIUM (landscape mobile) */
+}/*--- @media 481px---*/
+
+/*------- =============== ---------*/ 
+@media screen and (min-width:641px) {
+/* MEDIUM (landscape mobile & tablet) */
+}/*--- @media 641---*/
+
+/*------- =============== ---------*/
+@media screen and (min-width:991px) {
+/* LARGE (landscape tablet & small desktop screen) */
+}/*--- @media 991---*/
+
+/*------- =============== ---------*/
+@media screen and (min-width:1200px) {
+} /*--- @media 1200---*/
+
+
+/*------- =============== ---------*/
+@media screen and (min-width:1441px) {
+/* XXLARGE (large desktop screen) */
+}/*--- @media 1441---*/
+
+/*------- =============== ---------*/
+@media screen and (min-width:1681px) {
+/* more XXLARGE (ultra large desktop screen).  */
+}/*--- @media 1681---*/

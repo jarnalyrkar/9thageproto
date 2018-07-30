@@ -1,6 +1,6 @@
 /*-- CSS modified by CASP WIP  --*/
 
-@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:500|Montserrat:400');
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:500|Montserrat:300,400');
 
 
 /*--- ====1==== ---*/
@@ -24,20 +24,22 @@ section{
 	}
 a {
   color: #FFC85A;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
 	}
 a:hover {
-  color: #e15103;
+  /* color: #e15103; */
+  color: #fff;
   text-decoration: none;
 	}
 h2 {
   margin-bottom: 2%;
-  margin-top: 4%;
   letter-spacing: 0.1em;
   word-spacing: 0.17em;
   text-transform: uppercase;
 	}
 .title {
-  font-size: 1.6em;
+  font-size: 1.4em;
   text-align: center;
 	}
 .paragraph {
@@ -63,7 +65,6 @@ h2 {
 /* The navigation bar */
 .navbar-custom {
 	width: 100%;
-	background-color: rgba(15,15,15,0);
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -71,12 +72,25 @@ h2 {
 	text-align: center;
 	position: fixed;
 	z-index: 1;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 400;
 	text-transform: uppercase;
+	background-color: rgba(0,0,0,0);
+	-o-transition-duration: 0.6s;
+	-moz-transition-duration: 0.6s;
+	-ms-transition-duration: 0.6s;
+	-webkit-transition-duration: 0.6s;
+	transition-duration: 0.6s;
 	}
+.navbar-fade{
+	background-color: rgba(0,0,0,0.75);
+}
 .navbar-custom li {
   display: inline;
+	}
+.navbar-custom li a {
+  color: #fff;
+	}
+.navbar-custom li a:hover {
+  color: #FFC85A;
 	}
 #top_logo{
 	display: none;
@@ -98,44 +112,55 @@ h2 {
 	}
 	
 /* Header */
-.headerContainer {
-  position: relative;
-  top: 0;
-  left: 0;
-  margin-bottom: 6%;
-	}
 #headerlogo {
+	text-align: center;
+	display: block;
   position: absolute;
   left: 0;
-  top: 0;
+  top: 14%;
   right: 0;
-  bottom: 0;
   margin: auto;
   width: 290px;
 	}
-#headerimg {
-	width: 100%;
-	height: 75%;
-	top: 0;
-	left: -30px;
-	background: url("img/header.jpg") no-repeat center fixed; 
-	background-size: cover;
+.headerTitle{
+	padding: 80px 0 0 0;
+	font-size: 3.8em;
+	font-variant: small-caps;
+	color: #fff;
+	text-shadow: 0px 0px 11px rgba(0, 0, 0, 0.5);
+}
+.headerimg {
+	display: block;
+	position: relative;
+	height: 50%;
+	background: url("../img/header.jpg") center 0 no-repeat fixed; 
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   background-size: cover;
 	}
 .blackBarTop::before {
 	content: "";
 	display: block;
 	height: 20px;
-	background: url("img/black_texture_flip.png") repeat-x top;
+	background: url("../img/black_texture_flip.png") repeat-x top;
 	}
 .blackBarBottom::after {
 	content: "";
 	display: block;
 	height: 100%;
 	margin-top: -20px;
-	background: url("img/black_texture.png") repeat-x bottom;
+	background: url("../img/black_texture.png") repeat-x bottom;
 	}
-
+#forum{
+	padding:0 15px 0 30px;
+	}
+#rules{
+	padding:0 30px 0 15px;
+	}
 /* Introduction */
+#introduction{
+	margin: 30px 0 0 0;
+}
 .flexContainer {
 	display: box;
 	}
@@ -158,29 +183,28 @@ h2 {
 
 /* Parallax image */
 #miniatures {
-  background-image: url("img/miniatures.jpg");
   height: 30%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: url("../img/miniatures.jpg") center 0 no-repeat fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   background-size: cover;
 	}
 #worldmap {
-  background-image: url("img/worldMap.png");
   height: 30%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: url("../img/worldMap.png") center 0 no-repeat fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   background-size: cover;
 	}
 .container-fluid{
 	padding: 0;
 	}
-
+.iconSeparation{
+	margin: 60px 0 20px 0;
+}
 /* The Scroll */
 #thescroll {
   text-align: center;
-	}
-#scrollIcon {
-  margin: 2% 0 2% 0;
 	}
 .conte {
     width: 80%;
@@ -202,10 +226,6 @@ h2 {
 #theworld {
   text-align: center;	
   }
-#worldIcon {
-  margin-bottom: 2.5%;
-  margin-top: 2.5%;
-	}
 .armyContainer {
   display: inline-block;
   position: relative;
@@ -230,7 +250,7 @@ h2 {
   display: block;
   position: absolute;
   text-align: center;
-  background-color: rgba(15,15,15,0.7);
+  background-color: rgba(0,0,0,0.7);
   padding: 3% 15%;
   width: 100%;
   bottom:0px;
@@ -242,7 +262,7 @@ h2 {
 	}
 
 .armyText {
-  font-size: 1.2em;
+  font-size: 1em;
   line-height: 0.95em;
 	}
 
@@ -251,9 +271,18 @@ h2 {
 /*------- =======2======= ---------*/
 @media screen and (min-width:481px) {
 /* less MEDIUM (landscape mobile) */
-
 #headerlogo{
 	width: 390px;
+}
+.headerimg {
+	width: 100%;
+	height: 60%;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   background-size: cover;
+	}
+#home{
+	background: url("../img/header.jpg") center 0 no-repeat fixed; 
 }
 .paragraph {
 	text-align: justify;
@@ -263,7 +292,12 @@ h2 {
 	margin: 0 12%;
 	}
 /* Introduction */
-	
+#introduction{
+	margin: 60px 0 0 0;
+}	
+.title {
+  font-size: 1.6em;
+	}
 .flexContainer {
   display: flex;
   width: 100%;
@@ -360,6 +394,7 @@ h2 {
   width: 25%;
 	}
 	
+	
 
 }/*--- @media 641---*/
 
@@ -382,7 +417,9 @@ a:hover {
 #headerlogo {
   max-width: 720px;
 	}
-
+.headerimg {
+	height: 70%;
+	}
 /* Introduction */
 .paragraph {
 	font-size: 1.3em;
@@ -430,7 +467,7 @@ a:hover {
 }
 .armyText {
 	padding: 10px 0 0 0;
-  font-size: 1.4em;
+  font-size: 1.1em;
   line-height: 1em;
 	}
 .armyImage {
@@ -445,7 +482,7 @@ a:hover {
   -ms-transform: translate(-50%, -50%);
   opacity: 0;
   transition: .5s ease;
-  background-color: rgba(15,15,15,0);
+  background-color: rgba(0,0,0,0);
 	}
 .middle img {
 	display: inline-block;
@@ -480,7 +517,7 @@ a:hover {
 width: 100%;
 	}
 #introductionText{
-	margin: 0 0 60px 0;
+	margin: 0 0 30px 0;
 	}
 .centralText{
 	margin: 0;

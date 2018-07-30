@@ -5,13 +5,16 @@
   <meta name="author" content="The community of The 9th age">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="CSS/reset.css">
+  <link rel="stylesheet" href="CSS/stylesheet.css">
   <link rel="icon" href="img/seal.png">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script type="text/javascript" src="JS/my_script.js"></script>
 </head>
 
 <body> 
+	
+<div id="home" class="headerimg blackBarBottom">
 	<nav>
 	  <ul class="navbar-custom">
 	    <li class="list-item"><a class="link-item" href="#ninthage">Downloads</a></li>
@@ -23,10 +26,10 @@
   
   <header class="headerContainer">
     <h1 alt="The Ninth Age Fantasy Battles">
-      <div id="headerimg" class="blackBarBottom" src="img/header.jpg"></div>
       <img id="headerlogo" src="img/header_logo.png" alt="The 9th Age Fantasy Battle">
     </h1>
   </header>
+</div>
 
   <div class="container-fluid">
     <main class="main">
@@ -64,7 +67,7 @@
 
       <!-- The 9th Scroll -->
       <section id="thescroll">
-        <img id="scrollIcon" src="img/avoidance.png">
+        <img class="iconSeparation" id="scrollIcon" src="img/avoidance.png">
         <h2 class="title">The 9th Scroll</h2>
         <div class="conte">
           <a href="#"><img id="mostRecentScroll" src="img/scroll/issue_010.png" alt="9th Scroll, Issue 10"></a>
@@ -95,7 +98,7 @@
 
 			<div class="columns col2 centralText">
 		        <div id="theWorldText">
-		          <img id="worldIcon" src="img/cosmology.png" class="img-fluid">
+		          <img id="worldIcon" src="img/cosmology.png" class="iconSeparation">
 		          <h2 class="title">The World</h2>
 		          <p class="paragraph">
 		            The World of 9th age has as of now 16 official factions, lorem ipsum dolor sit amet,
@@ -107,7 +110,7 @@
 
 		        <div class="armies">
 		
-			     <a href="armies/HbE.html" class="armyContainer">
+			     <a href="HbE.html" class="armyContainer">
 		           <div class="wrapper">
 		              <img src="img/armies/HbE.png" alt="Highborn Elves" class="armyImage img-fluid">
 		              <div class="middle">
