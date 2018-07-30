@@ -1,6 +1,6 @@
 /*-- CSS modified by CASP WIP  --*/
 
-@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:500|Montserrat:300,400');
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:500,600|Montserrat:300,400');
 
 
 /*--- ====1==== ---*/
@@ -34,6 +34,9 @@ a:hover {
   color: #fff;
   text-decoration: none;
 	}
+h1{
+	font-weight: 600;
+}
 h2 {
   margin-bottom: 2%;
   letter-spacing: 0.1em;
@@ -124,8 +127,9 @@ h2 {
   width: 290px;
 	}
 .headerTitle{
-	padding: 80px 0 0 0;
-	font-size: 3.8em;
+	padding: 50px 0 0 0;
+	font-size: 3.2em;
+	line-height: 0.82em;
 	font-variant: small-caps;
 	color: #fff;
 	text-shadow: 0px 0px 11px rgba(0, 0, 0, 0.5);
@@ -344,6 +348,10 @@ h2 {
 #top_logo img{
 	height: 25px;
 	}
+.headerTitle{
+	padding: 80px 0 0 0;
+	font-size: 3.6em;
+}
 /* The navigation bar */
 .navbar-custom {
   min-height: 55px;
@@ -412,7 +420,10 @@ a:hover {
 #headerlogo{
 	width: 590px;
 }
-
+.headerTitle{
+	padding: 120px 0 0 0;
+	font-size: 4.2em;
+}
 
 /* Header */
 #headerlogo {
@@ -511,7 +522,10 @@ a:hover {
 #headerlogo{
 	width: 690px;
 }
-
+.headerTitle{
+	padding: 185px 0 0 0;
+	font-size: 4.6em;
+}
 /* Introduction */
 
 .columns {
@@ -559,6 +573,9 @@ width: 100%;
 @media screen and (min-width:1441px) {
 /* XXLARGE (large desktop screen) */
 
+.headerTitle{
+	font-size: 5.4em;
+}
 /* Introduction */
 .columns {
   padding: 0;
