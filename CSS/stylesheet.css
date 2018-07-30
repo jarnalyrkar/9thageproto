@@ -19,6 +19,9 @@ body, html {
   margin: 0;
   padding: 0;
 	}
+.italic{
+	font-style: italic;
+}
 section{
 		padding: 0 0 30px 0;
 	}
@@ -28,7 +31,6 @@ a {
 	font-weight: 300;
 	}
 a:hover {
-  /* color: #e15103; */
   color: #fff;
   text-decoration: none;
 	}
@@ -61,7 +63,6 @@ h2 {
 	margin-left: auto;
 	margin-right: auto;
 	}
-
 /* The navigation bar */
 .navbar-custom {
 	width: 100%;
