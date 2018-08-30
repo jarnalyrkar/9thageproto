@@ -484,6 +484,7 @@ a:hover {
 	}
 .armyHR img{
 	height: 60px;
+	margin: -30px 0 0 0;
 	}
 /* Parallax image */
 #miniatures {
@@ -602,6 +603,14 @@ width: 100%;
 a.ico_link{
 	font-size: 0.9em;
 	}
+.armyHR{
+  margin: 70px 0;
+  background: url("../img/separateur_large.png") center 0 no-repeat;
+	}
+.armyHR img{
+	height: 80px;
+	margin: -40px 0 0 0;
+	}
 	
 /* Armies */
 .middle {
@@ -656,6 +665,13 @@ a.ico_link{
 .armyText {
   font-size: 1.3em;
 	}
+.armyHR{
+  margin: 75px 0;
+	}
+.armyHR img{
+	height: 90px;
+	margin: -45px 0 0 0;
+	}
 	
 /* Parallax image */
 #miniatures {
@@ -676,6 +692,13 @@ a.ico_link{
 	}
 .armyText {
   font-size: 1.4em;
+	}
+.armyHR{
+  margin: 80px 0;
+	}
+.armyHR img{
+	height: 100px;
+	margin: -50px 0 0 0;
 	}
 /* Parallax image */
 #miniatures {
