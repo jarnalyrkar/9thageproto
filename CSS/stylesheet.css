@@ -38,7 +38,7 @@ h1{
 	font-weight: 600;
 }
 h2 {
-  margin-bottom: 2%;
+  margin: 2% 0;
   letter-spacing: 0.1em;
   word-spacing: 0.17em;
   text-transform: uppercase;
@@ -118,7 +118,6 @@ h2 {
 .list-item a {
 	text-decoration: none;
 	}
-	
 /* Header */
 #headerlogo {
 	text-align: center;
@@ -158,12 +157,6 @@ h2 {
 	margin-top: -20px;
 	background: url("../img/black_texture.png") repeat-x bottom;
 	}
-#forum{
-	padding:0 30px;
-	}
-#rules{
-	padding:0 30px;
-	}
 /* Introduction */
 #introduction{
 	margin: 30px 0 0 0;
@@ -187,6 +180,16 @@ h2 {
   order: 3;
   width: 50%;
 	}
+#forum{
+	padding:0 30px;
+	}
+#rules{
+	padding:0 30px;
+	}
+a.ico_link{
+	font-weight: 400;
+	font-size: 0.8em;
+	}
 .bouton{
 	/*display: inline-block;
 	border-radius:12px 0 12px 0;
@@ -196,7 +199,6 @@ h2 {
 	font:bold;
 	padding:6px 4px;*/
 	}
-
 /* Parallax image */
 #miniatures {
   height: 130px;
@@ -214,9 +216,24 @@ h2 {
 .iconSeparation{
 	margin: 35px 0 20px 0;
 }
+.armyHR{
+  height: 20px;
+  width: 100%;
+  background: url("../img/separateur.png") center 0 no-repeat;
+  margin: 40px 0;
+  text-align: center;
+	}
+.armyHR img{
+	height: 40px;
+	margin: -20px 0 0 0;
+	}
 /* The Scroll */
 #thescroll {
   text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  width: 80%;
+  overflow: auto;
 	}
 .conte {
     width: 80%;
@@ -462,7 +479,13 @@ a:hover {
 	font-size: 1.3em;
 	line-height: 1.2em;
 	}
-
+.armyHR{
+  margin: 60px 0;
+	}
+.armyHR img{
+	height: 60px;
+	margin: -30px 0 0 0;
+	}
 /* Parallax image */
 #miniatures {
   /*height: 30%; */
@@ -477,10 +500,6 @@ a:hover {
 
 /* The Scroll */
 #thescroll {
-  margin: 0 auto;
-  padding: 0;
-  width: 80%;
-  overflow: auto;
 	}
 #mostRecentScroll {
   padding: 0;
@@ -525,7 +544,7 @@ a:hover {
 	height: 55px;
 	}
 .armyContainer:hover .armyImage {
-  opacity: 0.3;
+  opacity: 0.2;
 	}
 .armyImage::after {
   opacity: 0.9;
@@ -581,12 +600,24 @@ width: 100%;
 .list-item a {
 	padding: 23px 15px;
 	}
+a.ico_link{
+	font-size: 0.9em;
+	}
+.armyHR{
+  margin: 70px 0;
+  background: url("../img/separateur_large.png") center 0 no-repeat;
+	}
+.armyHR img{
+	height: 80px;
+	margin: -40px 0 0 0;
+	}
 	
 /* Armies */
 .middle {
   top: 40%;
 	}
 .middle img {
+	height: 65px;
 	}
 .armyText {
   font-size: 1.2em;
@@ -634,6 +665,13 @@ width: 100%;
 .armyText {
   font-size: 1.3em;
 	}
+.armyHR{
+  margin: 75px 0;
+	}
+.armyHR img{
+	height: 90px;
+	margin: -45px 0 0 0;
+	}
 	
 /* Parallax image */
 #miniatures {
@@ -654,6 +692,13 @@ width: 100%;
 	}
 .armyText {
   font-size: 1.4em;
+	}
+.armyHR{
+  margin: 80px 0;
+	}
+.armyHR img{
+	height: 100px;
+	margin: -50px 0 0 0;
 	}
 /* Parallax image */
 #miniatures {
